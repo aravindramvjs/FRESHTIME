@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESHTIME</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    </style>
+</head>
+<body>
+            <div class="main-container">
+                
+                <div class="dashboard">
+                    <div class="sidepanel">
+                        <a href="#"><img src="assets/FRESHTIME LOGO 2.png" width="250px"></a>
+                        <a href="#" ><i class='fas fa-home'></i><span class="title">Home</span></a>
+                        <a href="#"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
+                        <a href="#timer-page"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
+                        <a href="#"><i class="fa fa-line-chart"></i><span class="title">Statistics</span></a>
+                        <a href="#"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
+                        <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
+                        <div class="toggle"></div>                        
+                    </div>
+
+                    <div class="task-page">
+                        <div class="top">
+                            <p class="top-1">Good Morning, Aravind <span class="dot">.</span></p>
+                            <p class="top-2">If not now. When?</p>
+                            <div class="date-task">
+                                <p><span class="day">Tue</span> <br> <span class="date">6</span> <br> <span class="day">Dec</span></p>
+                                <h1 class="add-task"> <i class="fa fa-check" style="font-size:28px"></i>ADD TASK</h1>
+                            </div>
+                            <label for="add-task"></label>
+                            <input type="text" id="add-task" placeholder="+  Add Task...">
+                            <button class="addbtn">ADD</button>
+                        </div>
+
+                        
+                        <div class="main-cont">
+
+                            <div class="headers">
+                                <p>Task</p>
+                                <p>Due Date</p>
+                                <p>Priority</p>
+                                <p>Progress</p>
+                            </div>
+
+                            <div class="task-list">
+                
+                                <p>Project <br>Layout</p>
+                                <p>6 Dec 2022, <br>5:00 Pm</p>
+                                <p>High <br>Priority</p>
+                                <p class="inprogress">Inprogress</p>
+                                <button class="start">Start</button>
+                            </div>
+
+                            <div class="task-list">
+                
+                                <p>Project <br>Layout</p>
+                                <p>6 Dec 2022, <br>5:00 Pm</p>
+                                <p>High <br>Priority</p>
+                                <p class="inprogress">Inprogress</p>
+                                <button class="start">Start</button>
+                            </div>
+
+                            <div class="task-list">
+                
+                                <p>Project <br>Layout</p>
+                                <p>6 Dec 2022, <br>5:00 Pm</p>
+                                <p>High <br>Priority</p>
+                                <p class="inprogress">Inprogress</p>
+                                <button class="start">Start</button>
+                            </div>
+                        </div>                      
+                    </div>
+
+            </div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+
+            <div class="timer-page" id="timer-page">
+                <h1>Timer</h1>
+                <p>start</p>
+                <p>end</p>
+            </div>
+
+<script>
+    let sidepanel = document.querySelector('.sidepanel');
+    let toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+        sidepanel.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
