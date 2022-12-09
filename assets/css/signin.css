@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Ubuntu;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signinform{
+    width: 400px;
+    height: 600px;
+    margin: 150px 0px 0px 50px;
+    background-color:aliceblue;
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    font-size: 22px;
+
+}
+img{
+    margin-right: -100px;
+}
+.title{
+    color: #fcb139;
+}
+#email, #password{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding-left: 15px;
+    border-right: 5px solid #fcb139;
+    font-size: 16px;
+}
+.rem-pass{
+    display: flex;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+#checkbox{
+    margin: 5px;
+}
+.rem-pass p{
+    margin-left: 40px;
+    color: grey;
+}
+.signinform button{
+    height: 40px;
+    width: 90px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fcb139;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+.signinform h1{
+    margin-left: -20px;
+}
+.tagline{
+    color: grey;
+    margin-top: 10px;
+}
+.fa{
+    margin: 20px;
+    height: 38px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    padding-top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
