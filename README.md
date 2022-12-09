@@ -7,3 +7,5 @@ Market Research: https://docs.google.com/document/d/1Kj57oDS71V6trVd4mM0hEmJ3R0Q
 User flow: https://drive.google.com/file/d/1eF-NIzO4najV1Lk4jfR5fgFyTCAcw8X8/view?usp=sharing
 
 Wireframe: https://drive.google.com/file/d/1jF6ASqcDFD9vvdtULzrgZR-EL1uBAgbb/view?usp=sharing
+
+Live Server: https://aravindramvjs.github.io/FRESHTIME/
