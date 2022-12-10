@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+    <!-- Ubuntu Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+
+    <!-- Icons Links -->
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main"> <!--The Total Page starts-->
+        <!-- Sidepanel starts -->
+        <div class="sidepanel">
+            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+            <a href="#" ><i class='fas fa-home'></i><span class="title">Home</span></a>
+            <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
+            <a href="#"><i class='far fa-hourglass'></i><span class="title">Timer</span><input type="radio" id="radio"></a>
+            <a href="#"><i class="fa fa-line-chart"></i><span class="title">Statistics</span></a>
+            <a href="#"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
+            <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
+            <div class="toggle"></div>                        
+        </div>
+
+        <!-- the main dashborad starts -->
+        <div class="dashboard">
+
+            <!-- Left side content starts -->
+            <div class="main-dash">
+
+                <!-- The Top content of the dashboard starts -->
+                <div class="top-dash">
+                    <label for="search">
+                        <input type="search" id="search" placeholder="Search">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <p>Monday, 12 December 2022</p>
+                </div>
+
+
+                <!-- The Second row starts -->
+                <div class="day-overview">
+
+                    <div class="day-box" style="margin-right: 20px;">
+                        <p>Habit Done ...</p>
+                        <div class="wrap">
+                            <img src="../assets/Images/run.png" alt="Run" width="50px">
+                            <p>75 %</p>
+                        </div>
+                    </div>
+                <div class="day-box" style="margin-right: 20px;">
+                    <p>Sleep</p>
+                    <div class="wrap">
+                        <img src="../assets/Images/sleep.png" alt="sleep" width="50px">
+                        <p>6 Hrs</p>
+                    </div>
+                </div>
+                <div class="day-box" style="margin-right: 20px;">
+                    <p>Completed Task</p>
+                    <div class="wrap">
+                        <img src="../assets/Images/completed.png" alt="Completed task" width="45px">
+                        <p>25%</p>
+                    </div>
+                </div>
+                <div class="day-box" style="margin-right: 20px;">
+                    <p>Incompleted Task</p>
+                    <div class="wrap">
+                        <img src="../assets/Images/incomplete.png" alt="Incompleted task" width="45px">
+                        <p>75 %</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Third Row Starts -->
+                <div class="overall">
+
+                    <div>
+                        <div class="overview">
+                            <i class='far fa-calendar-check' ></i>
+                            <div >
+                                <h2>Today's Overview</h2>
+                                <p class="percent">37%</p>
+                            </div>
+                        </div> 
+                        <div class="overview">
+                            <i class='far fa-calendar-alt'></i>
+                            <div>
+                                <h2>Week Overview</h2>
+                                <p class="percent">56%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="this-month-overview">
+                        <p>Month Overview</p>
+                        <img src="../assets/Images/month overview (2).png" alt="Month Overview">
+                    </div>
+
+                </div>
+
+            <!-- The Forth Row starts -->
+                <div class="report">
+                    <img src="../assets/Images/Report.png" alt="Report" width="500px">
+                </div>
+        </div>
+            <div class="side-dash">
+                <div class="profile">
+                    <i class='far fa-comment'></i>
+                    <img src="../assets/Images/avator.jpg" alt="avator" width="70px">
+                    <i class="fa fa-bell"></i>
+                </div>
+                
+                <div class="calendar">
+                    <h4>Welcome Aravind!</h4>
+                    <img src="../assets/Images/calendar.png "alt="calendar" width="280px">
+                </div>
+                <div class="enjoy">
+                    <img src="../assets/Images/relax-in-sofa.svg" alt="working" width="350px">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <script>
+        let sidepanel = document.querySelector('.sidepanel');
+        let toggle = document.querySelector('.toggle');
+        toggle.onclick = function(){
+            sidepanel.classList.toggle('active')
+        }
+        
+    </script>
+</body>
+</html>
