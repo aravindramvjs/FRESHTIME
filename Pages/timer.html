@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FRESHTIME | Timer</title>
+
+    <link rel="stylesheet" href="../assets/css/timer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <div class="main-container">
+            <div class="dashboard">
+                <div class="sidepanel">
+                    <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+                    <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
+                    <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
+                    <a href="#"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
+                    <a href="#"><i class="fa fa-line-chart"></i><span class="title">Statistics</span></a>
+                    <a href="#"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
+                    <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
+                    <div class="toggle"></div>
+                </div>
+
+                <div class="timer">
+                    <div class="timer-top">
+                        <a href="#"><button><img src="../assets/Images/tomato-icon.svg" alt="tomoto" width="30px"> Pomodoro</button></a>
+                        <a href="animedoro.html"><button><img src="../assets/Images/icons8-naruto.svg" alt="naruto" width="30px"> Animedoro</button></a>
+                    </div>
+                    <br>
+                    <div class="timer-mid">
+                        <button><img src="../assets/Images/timer.gif" alt="timer" width="24px"> Timer</button>
+                        <button><img src="../assets/Images/short break.gif" alt="short break" width="24px"> Short Break</button>
+                        <button><img src="../assets/Images/long break.gif" alt="long break" width="24px"> Long Break</button>
+                    </div>
+                    <p>25:00</p>
+                    <div class="timer-end">
+                        <button ><img src="../assets/Images/start.gif" alt="start" width="20px"> Start</button>
+                        <button><img src="../assets/Images/PAUSE.gif" alt="" width="20px"> Pause</button>
+                        <i class="fa fa-repeat"></i> 
+                    </div>
+                </div>
+                <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/0JpkcEtZWGrfuDYOzGI5dr?utm_source=generator"
+                width="20%" 
+                height="80" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+            </div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+             <!-- Full screen Script -->
+             <button onclick="openFullscreen();" id="fullscreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
+             <button onclick="closeFullscreen();" id="fullscreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
+             
+             <script>
+             var elem = document.documentElement;
+             function openFullscreen() {
+               if (elem.requestFullscreen) {
+                 elem.requestFullscreen();
+               } else if (elem.webkitRequestFullscreen) { /* Safari */
+                 elem.webkitRequestFullscreen();
+               } else if (elem.msRequestFullscreen) { /* IE11 */
+                 elem.msRequestFullscreen();
+               }
+             }
+             
+             function closeFullscreen() {
+               if (document.exitFullscreen) {
+                 document.exitFullscreen();
+               } else if (document.webkitExitFullscreen) { /* Safari */
+                 document.webkitExitFullscreen();
+               } else if (document.msExitFullscreen) { /* IE11 */
+                 document.msExitFullscreen();
+               }
+             }
+             </script>
+        </div>
+
+        <script>
+            let sidepanel = document.querySelector('.sidepanel');
+            let toggle = document.querySelector('.toggle');
+            toggle.onclick = function(){
+                sidepanel.classList.toggle('active')
+            }
+            
+        </script>
+</body>
+</html>
