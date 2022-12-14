@@ -34,7 +34,7 @@
                         <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
                         <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
                         <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span><input type="radio" id="radio"></a>
-                        <a href="#"><i class="fa fa-line-chart"></i><span class="title">Statistics</span></a>
+                        <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
                         <a href="journal-dashboard.html"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
                         <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
                         <div class="toggle"></div>                        
@@ -92,6 +92,31 @@
 
             </div>
 
+            </div>
+            <input type="checkbox" id="checkbox">
+            <!-- <div class="task-bg"> -->
+            <div class="task-notes">
+                <h2>Task Name #01</h2>
+                <button><i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me</button>
+                <Button><i class="fa fa-hashtag" style="color:violet"></i>Tags</Button>
+                <button><i class="fa fa-user"></i>Personal</button>
+                <button><i class="fa fa-suitcase" style="color:skyblue"></i>Work</button> <br>
+                <label for="date">Due Date: </label>
+                <input type="date" id="date"> <br>
+                <label for="Priority">Priority Of Your Task: </label>
+                <select name="Priority" id="Priority">
+                    <option value="Less Priority">Less Priority</option>
+                    <option value="Mid Priority">Mid Priority</option>
+                    <option value="High Priority">High Priority</option>
+                    <option value="Waste Of Time">Waste Of Time</option>
+                </select>
+                <h3>Notes:</h3>
+                <input type="text" placeholder="Insert Your Notes Here" id="notes">
+                <h3>Sub Task:</h3>
+                <input type="radio" id="radio"><span id="sub-task">Add New Sutask</span></input>
+                <h3>Attachment:</h3>
+                <p class="files">Click here to add / drop your files here</p>
+            <!-- </div> -->
             </div>
                 <div class="circle1"></div>
                 <div class="circle2"></div>

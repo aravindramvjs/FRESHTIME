@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-.main{
+body{
     height: 100%;
     background-color: #f7f7ff;
 }
@@ -122,7 +122,7 @@
     border-radius: 50%;
     background-color: #b5eeff;
 }
-.circle2{
+/* .circle2{
     height: 25rem;
     width: 25rem;
     position: fixed;
@@ -130,16 +130,16 @@
     right: -5%; 
     border-radius: 50%;
     background-color: #ceafee;
-}
-.circle3{
+} */
+/* .circle3{
     height: 2rem;
     width: 2rem;
-    position: absolute;
+    position: fixed;
     bottom: 1%;
     left: 40%; 
     border-radius: 50%;
     background-color: #5b347d;
-}
+} */
 .circle4{
     height: 2rem;
     width: 2rem;
@@ -158,155 +158,195 @@
     border-radius: 50%;
     background-color: #f9d0e7;
 }
-.dashboard{
+.habit{
     margin-left: 300px;
+    padding-top: 50px;
     display: flex;
-    padding: 30px;
-}
-.top-dash{
-    display: flex;
-    justify-content: space-between;
-}
-.main-dash{
-    width: 800px;
-    padding-right: 80px;
-    z-index: 3;
-}
-.top-dash input{
-    height: 40px;
-    width: 350px;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-}
-.fa-search{
-    margin-left: -30px;
-    color: grey;
-}
-.day-overview{
-    display: flex;
-    margin-top: 50px; 
-    width: 800px;
-}
-.day-overview p{
     font-size: 18px;
-    font-weight: 700;
 }
-.day-box{
-    cursor: pointer;
-    width: 200px;
-    height: 130px;
-    padding: 15px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 30px;
+.main-habit{
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+    z-index: 10;
+}
+.main-habit-header p{
+    color: #a3a8b7;
+    margin-top: 15px;
+}
+.habit-overview{
+    display: flex;
+}
+.addnew{
+    padding: 20px;
     background-color: white;
-}
-.day-box:hover{
-    background-color: #ff8902;
-}
-.wrap{
-    display: flex;
-    margin-top: 20px;
-}
-.wrap p{
-    margin-top: 20px;
-    margin-left: 10px;
-}
-.overall{
-    display: flex;
-    margin-top: 50px;
+    font-size: 20px;
+    color: #2793f8;
+    border-radius: 15px;
+    height: 60px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
 }
 .overview{
-    width: 350px;
-    display: flex;
-    padding:20px;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.fa-calendar-check, .fa-calendar-alt{
-    font-size: 50px;
-    color: #4a6376;
-    padding-left: 20px;
-    padding-top: 12px;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.overview h2{
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-    color: #3124ad;
-}
-.overview p{
-    font-size: 32px;
-    margin: 20px;
-}
-.overview:hover{
-    background-color: white;
-}
-.this-month-overview{
-    padding: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 20px;
-    margin-left: 50px;
-    height: 250px;
+    background-color: #eef2fb;
+    height: 60px;
     width: 500px;
-    margin-top: 30px;
-    background-color: white;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 7px;
+    padding-left: 10px;
+    display: flex;
+}
+.overview button{
+    font-size: 22px;
+    background-color: #eef2fb;
+    color: #aeb4bd;
+    border: none;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 30px;
     cursor: pointer;
 }
-.this-month-overview img{
-    text-align: center;
-    margin-left: 50px;
-    margin-top: 20px;
+.overview .week{
+    background-color: white;
+    height: 45px;
+    width: 150px;
+    color: black;
 }
-.this-month-overview p{
-    font-weight: 700;
+.overview button:hover{
+    background-color: white;
+}
+.prev{
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#file{
+    height: 15px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.progress{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.fa-arrow-up{
+    margin-right: -35px;
+    color: green;
+    font-size: 22px;
+}
+.weekdays{
+    display: flex;
+    margin-left: 150px;
+}
+.weekdays p{
+    margin-right: 45px;
+    font-size: 22px;
+}
+.habit-label{
+    display: flex;
+    margin: 40px  40px  40px 0px;
+}
+.habit-label p{
     font-size: 18px;
+    margin-right: 80px;
+    font-weight: 800;
 }
-.this-month-overview:hover{
+.grey-box, .whtie-box,.voilet-box,.orange-box,.blue-box,.green-box,.pink-box{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    margin: 0px 40px 40px 0px;
+}
+.grey-box{
+    background-color: #e0e6f4;
+}
+.whtie-box{
     background-color: #f7f7ff;
 }
-.report img{
-    margin-top: 50px;
-    width: 800px;
-    height:500px;
-    margin-left: -80px;
+.voilet-box{
+    background-color: #9b5cfe;
 }
-.side-dash{
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 700px;
-    background-color: white;
-    z-index: 3;
+.orange-box{
+    background-color: #fd9f31;
 }
-.profile{
-    display: flex;
-    text-align: center;
-    margin-top: 50px;
+.blue-box{
+    background-color: #3495fa;
+}
+.green-box{
+    background-color: #08e1e0;
+}
+.pink-box{
+    background-color: #ff4ec5;
+}
+
+.today-habit{
+    height: 100%;
+    width: 30%;
     padding: 20px;
+    z-index: 10;
+}
+.today-habit p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.habit-task{
+    border: 3px solid #dce8f8 ;
+    padding: 20px;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+.done{
+    margin-bottom: 80px;
+    border-left: 5px solid orange;
+    padding:20px;
+    border-radius: 5px;
     cursor: pointer;
 }
-.profile img{
-    border-radius: 50%;
+.habit-streak{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
 }
-.fa-comment,.fa-bell{
-    font-size: 26px;
-    margin-top: 20px;
+.done button{
+    width: 230px;
+    padding: 10px;
+    color: #2793f8;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #dce8f8;
+    font-size: 15px;
+    font-weight: 800;
 }
-.calendar h4{
-    margin-top: 20px;
-    margin-bottom: 80px;
-    margin-left: 75px;
+.habit2, .habit2 button,.habit3, .habit3 button,.habit5, .habit5 button{
+    background-color: #3495fa;
+    color: white;
+    border-radius: 15px;
+    border: none;
 }
-.enjoy img{
-    margin-top: 100px;
+.habit3, .habit3 button{
+    background-color: #ff4ec5;
+}
+.habit5, .habit5 button{
+    background-color: #fd9f31;
+}
+.streak{
+    font-size: 22px;
+}
+.habit-streak .fa, .habit-streak .fas{
+    margin-right: -30px;
+}
+.habit1:hover, .habit4:hover, .habit6:hover{
+    background-color: white;
 }
