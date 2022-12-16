@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FRESHTIME</title>
+    <!-- page title added -->
+    <title>FRESHTIME | task page</title>
 
+    <!-- css file linked -->
     <link rel="stylesheet" href="../assets/css/task.css">
 
+    <!-- ubuntu font link added -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
 
-    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap for adding icon  -->
+    <script
+    src="https://kit.fontawesome.com/ee40c53027.js"
+    crossorigin="anonymous"
+    integrity="">
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,19 +35,27 @@
 </head>
 
 <body>
+
+            <!-- main container of task starts  -->
             <div class="main-container">
                 
+                <!-- dashboard container added -->
                 <div class="dashboard">
+
+                    <!-- sidepanel starts -->
                     <div class="sidepanel">
-                        <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+                        <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
                         <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
                         <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
-                        <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span><input type="radio" id="radio"></a>
+                        <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
                         <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
                         <a href="journal-dashboard.html"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
                         <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
                         <div class="toggle"></div>                        
                     </div>
+                    <!-- sidepanel ends -->
+
+                    <!-- task section starts -->
                     <div class="task-page">
                         <div class="top">
                             <p class="top-1">Good Morning, Aravind <span class="dot">.</span></p>
@@ -61,6 +78,7 @@
                                 <p>Progress</p>
                             </div>
 
+                            <!-- each task added -->
                             <div class="task-list">
                 
                                 <p>Project <br>Layout</p>
@@ -69,7 +87,9 @@
                                 <p class="inprogress">Inprogress</p>
                                 <button class="start">Start</button>
                             </div>
+                            <!-- each task ends -->
 
+                            <!-- each task added -->
                             <div class="task-list">
                 
                                 <p>Project <br>Layout</p>
@@ -78,7 +98,9 @@
                                 <p class="inprogress">Inprogress</p>
                                 <button class="start">Start</button>
                             </div>
-
+                            <!-- each task ends -->
+                            
+                            <!-- each task added -->
                             <div class="task-list">
                 
                                 <p>Project <br>Layout</p>
@@ -87,22 +109,32 @@
                                 <p class="inprogress">Inprogress</p>
                                 <button class="start">Start</button>
                             </div>
+                            <!-- each task ends -->
                         </div>                      
                     </div>
-
+                    <!-- task section ends -->
             </div>
+            <!-- dashboard container ends -->
+        </div>
+        <!-- main container of task ends  -->
 
-            </div>
-            <input type="checkbox" id="checkbox">
-            <!-- <div class="task-bg"> -->
+            <!-- task description page starts  -->
+            <input type="checkbox" id="checkbox"><label for="checkbox">.</label>
+
+
             <div class="task-notes">
+
+
                 <h2>Task Name #01</h2>
+
                 <button><i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me</button>
                 <Button><i class="fa fa-hashtag" style="color:violet"></i>Tags</Button>
                 <button><i class="fa fa-user"></i>Personal</button>
                 <button><i class="fa fa-suitcase" style="color:skyblue"></i>Work</button> <br>
+
                 <label for="date">Due Date: </label>
                 <input type="date" id="date"> <br>
+
                 <label for="Priority">Priority Of Your Task: </label>
                 <select name="Priority" id="Priority">
                     <option value="Less Priority">Less Priority</option>
@@ -110,21 +142,27 @@
                     <option value="High Priority">High Priority</option>
                     <option value="Waste Of Time">Waste Of Time</option>
                 </select>
+
+
                 <h3>Notes:</h3>
+
                 <input type="text" placeholder="Insert Your Notes Here" id="notes">
                 <h3>Sub Task:</h3>
-                <input type="radio" id="radio"><span id="sub-task">Add New Sutask</span></input>
+                <input type="radio" id="radio" aria-label="sub-task"><span id="sub-task">Add New Sutask</span></input> <label for="radio">.</label>
                 <h3>Attachment:</h3>
                 <p class="files">Click here to add / drop your files here</p>
-            <!-- </div> -->
             </div>
+            <!-- task description page ends  -->
+
+                <!-- circle starts -->
                 <div class="circle1"></div>
                 <div class="circle2"></div>
                 <div class="circle3"></div>
                 <div class="circle4"></div>
                 <div class="circle5"></div>
             </div>
-
+            <!-- circle ends -->
+<!-- pin script starts -->
 <script>
     let sidepanel = document.querySelector('.sidepanel');
     let toggle = document.querySelector('.toggle');
@@ -132,6 +170,7 @@
         sidepanel.classList.toggle('active')
     }
 </script>
+<!-- pin script ends -->
 
 </body>
 </html>

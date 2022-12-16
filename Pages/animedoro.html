@@ -5,26 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- page title -->
     <title>FRESHTIME | Timer</title>
 
+    <!-- style sheet added -->
     <link rel="stylesheet" href="../assets/css/animedoro.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ubuntu font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
 
-    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+       <!-- bootstrap for adding icon  -->
+       <script
+       src="https://kit.fontawesome.com/ee40c53027.js"
+       integrity=""
+       crossorigin="anonymous">
+       </script>
 
 </head>
 
 <body>
+  <!-- main container started -->
         <div class="main-container">
             <!-- The Total Page is dashboard -->
             <div class="dashboard">
-
+              <!-- sidepanel started -->
                 <div class="sidepanel">
-                    <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+                    <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
                     <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
                     <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
                     <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
@@ -33,7 +43,9 @@
                     <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
                     <div class="toggle"></div>
                 </div>
+                <!-- sidepanel ended -->
 
+                <!-- timer started -->
                 <div class="timer">
                     <div class="timer-top">
                         <a href="timer.html"><button><img src="../assets/Images/tomato-icon.svg" alt="tomoto" width="30px"> Pomodoro</button></a>
@@ -57,6 +69,7 @@
 
                         <!-- spotify playlist starts -->
                         <iframe 
+                        title="Navigation menu"
                         style="border-radius:12px" 
                         src="https://open.spotify.com/embed/playlist/1XeqqIzxG7in2g0I0DCAFQ?utm_source=generator&theme=0" 
                         height="80px" 
@@ -66,10 +79,11 @@
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                         loading="lazy" >
                         </iframe>
+                        <!-- spotify playlist script ends -->
 
-                        <!-- Full screen Script starts -->
-                        <button onclick="closeFullscreen();" id="fullscreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
-                        <button onclick="openFullscreen();" id="fullscreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
+                        <!-- Full/ close screen Script starts -->
+                        <button onclick="closeFullscreen();" id="fullscreen" aria-label="fullscreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
+                        <button onclick="openFullscreen();" id="fullscreen" aria-label="closescreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
             
                         <script>
                         var elem = document.querySelector('.timer');
@@ -94,7 +108,7 @@
                         }
                         </script>
 
-                        <!-- Full screen script ends -->
+                        <!-- Full/close screen script ends -->
                 </div><!-- timer ends -->
             </div><!-- dashboard ends -->
 

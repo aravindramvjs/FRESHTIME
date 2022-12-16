@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <!-- page titlie -->
+    <title>Freshtime | Dashboard</title>
 
+    <!-- style sheet added -->
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 
     <!-- Ubuntu Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
 
-    <!-- Icons Links -->
-    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+    <!-- bootstrap for adding icon  -->
+    <script
+    src="https://kit.fontawesome.com/ee40c53027.js"
+    crossorigin="anonymous"
+    integrity="">
+    </script>
 </head>
 <body>
     <div class="main"> <!--The Total Page starts-->
         <!-- Sidepanel starts -->
         <div class="sidepanel">
-            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"alt="logo"></a>
             <a href="dashboard.html"><i class='fas fa-home'></i><span class="title">Home</span></a>
             <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
             <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span</a>
@@ -44,6 +51,7 @@
                     </label>
                     <p>Monday, 12 December 2022</p>
                 </div>
+                <!-- The Top content of the dashboard ended -->
 
 
                 <!-- The Second row starts -->
@@ -78,6 +86,7 @@
                     </div>
                 </div>
             </div>
+            <!-- The Second row ended -->
 
             <!-- The Third Row Starts -->
                 <div class="overall">
@@ -104,12 +113,17 @@
                     </div>
 
                 </div>
+                <!-- The Third Row ended -->
 
             <!-- The Forth Row starts -->
                 <div class="report">
                     <img src="../assets/Images/Report.png" alt="Report" width="500px">
                 </div>
+            <!-- The Forth Row starts -->
         </div>
+        <!-- Left side content starts -->
+
+            <!-- right side dashboard added-->
             <div class="side-dash">
                 <div class="profile">
                     <i class='far fa-comment'></i>
@@ -118,23 +132,30 @@
                 </div>
                 
                 <div class="calendar">
-                    <h4>Welcome Aravind!</h4>
+                    <p>Welcome Aravind!</p>
                     <img src="../assets/Images/calendar.png "alt="calendar" width="280px">
                 </div>
                 <div class="enjoy">
                     <img src="../assets/Images/relax-in-sofa.svg" alt="working" width="350px">
                 </div>
             </div>
+            <!-- right side dashboard added-->
 
         </div>
+        <!-- the main dashborad starts -->
     </div>
+    <!-- the total page ended -->
 
-    
+
+    <!-- circle starts -->
     <div class="circle1"></div>
     <div class="circle2"></div>
     <div class="circle3"></div>
     <div class="circle4"></div>
     <div class="circle5"></div>
+    <!-- circle ended -->
+
+    <!-- pin script sterted -->
     <script>
         let sidepanel = document.querySelector('.sidepanel');
         let toggle = document.querySelector('.toggle');
@@ -143,5 +164,6 @@
         }
         
     </script>
+    <!-- pin script ended -->
 </body>
 </html>

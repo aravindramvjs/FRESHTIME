@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--page title added -->
     <title>FRESHTIME | Journal</title>
 
+    <!-- style sheet added -->
     <link rel="stylesheet" href="../assets/css/journal.css">
 
         <!-- Nunito Font Link -->
@@ -13,15 +15,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
     
-        <!-- Icons Links -->
-        <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+        <!-- bootstrap for adding icon  -->
+      <script
+      src="https://kit.fontawesome.com/ee40c53027.js"
+      crossorigin="anonymous"
+      integrity="">
+      </script>
 
 </head>
 <body>
     <div class="main"> <!--The Total Page starts-->
         <!-- Sidepanel starts -->
         <div class="sidepanel">
-            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
             <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
             <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
             <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
@@ -30,7 +36,9 @@
             <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
             <div class="toggle"></div>                        
         </div>
+        <!-- sidepanel ends -->
 
+        <!-- jsournal page starts -->
         <div class="journal">
             <a href="journal-dashboard.html"><button>Dashboard</button></a>
             <a href="journal.html"><button>Journal</button></a>
@@ -55,14 +63,17 @@
                 <p>You have no entrires for the previous week, month and year.</p>
             </div>
         </div>
+        <!-- jpurnal page ends -->
     </div>
-
+    <!-- circle added -->
     <div class="circle1"></div>
     <div class="circle2"></div>
     <div class="circle3"></div>
     <div class="circle4"></div>
     <div class="circle5"></div>
+    <!-- circle ended -->
 
+    <!-- pin script added -->
     <script>
         let sidepanel = document.querySelector('.sidepanel');
         let toggle = document.querySelector('.toggle');
@@ -71,5 +82,6 @@
         }
         
     </script>
+    <!-- pin script ends -->
 </body>
 </html>

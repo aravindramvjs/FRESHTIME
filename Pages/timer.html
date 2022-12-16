@@ -6,23 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- page title added -->
     <title>FRESHTIME | Timer</title>
 
+    <!-- style sheet added -->
     <link rel="stylesheet" href="../assets/css/timer.css">
 
+    <!--ubuntu font link added  -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
 
-    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+    <!-- bootstrap for adding icon  -->
+    <script
+    src="https://kit.fontawesome.com/ee40c53027.js"
+    crossorigin="anonymous"
+    integrity=""></script>
 
 </head>
 
 <body>
         <div class="main-container">
+
+          <!-- dashboard starts -->
             <div class="dashboard">
+              <!-- sidepanbel starts -->
                 <div class="sidepanel">
-                    <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"></a>
+                    <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
                     <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
                     <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
                     <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
@@ -31,7 +41,9 @@
                     <a href="#"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
                     <div class="toggle"></div>
                 </div>
+                <!-- sidepanel ends -->
 
+                <!-- main container of time starts -->
                 <div class="timer">
                     <div class="timer-top">
                         <a href="#"><button><img src="../assets/Images/tomato-icon.svg" alt="tomoto" width="30px"> Pomodoro</button></a>
@@ -49,9 +61,12 @@
                         <button><img src="../assets/Images/PAUSE.gif" alt="" width="20px"> Pause</button>
                         <i class="fa fa-repeat"></i> 
                     </div>
+                    <!-- main container of time starts -->
 
+                    <!-- spotify script added -->
                     <div class="script">
                       <iframe 
+                      title="Navigation menu"
                         style="border-radius:12px" 
                         src="https://open.spotify.com/embed/playlist/0JpkcEtZWGrfuDYOzGI5dr?utm_source=generator"
                         width="20%" 
@@ -61,9 +76,11 @@
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                         loading="lazy">
                     </iframe>
-                  <!-- Full screen Script -->
-                        <button onclick="openFullscreen();" id="fullscreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
-                        <button onclick="closeFullscreen();" id="fullscreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
+                    <!-- spotify script ends -->
+                    
+                  <!-- Full/close screen Script -->
+                        <button onclick="openFullscreen();" id="fullscreen" aria-label="fullscreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
+                        <button onclick="closeFullscreen();" id="fullscreen" aria-label="closescreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
                                    
                         <script>
                         var elem = document.querySelector('.timer');
@@ -87,19 +104,28 @@
                           }
                         }
                         </script>
+                        
                     </div>
+                    <!-- full/close screen script ends -->
+
+              <!-- circle script starts -->
              <div class="circle1"></div>
              <div class="circle2"></div>
              <div class="circle3"></div>
              <div class="circle4"></div>
              <div class="circle5"></div>
-                </div>
-                
-            </div>
-            
-             
-        </div>
+             <!-- circle script ends -->
 
+          </div>
+          <!-- main container of time ends -->
+                
+      </div>
+      <!-- dahboard ends -->
+    
+  </div>
+
+
+        <!-- pin script starts -->
         <script>
             let sidepanel = document.querySelector('.sidepanel');
             let toggle = document.querySelector('.toggle');
@@ -108,5 +134,6 @@
             }
             
         </script>
+        <!-- pin script ends -->
 </body>
 </html>

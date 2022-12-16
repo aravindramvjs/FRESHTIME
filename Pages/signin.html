@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title added -->
     <title>FRESHTIME | SIGN-IN</title>
-
+    <!-- ubuntu font link added -->
     <link rel="stylesheet" href="../assets/css/signin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
 
-    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous"></script>
+    <!-- bootstrap for adding icon  -->
+    <script
+    src="https://kit.fontawesome.com/ee40c53027.js"
+    integrity=""
+    crossorigin="anonymous">
+    </script>
+    
 </head>
 <body>
+
+    <!-- total starts -->
     <div class="signinform">
 
         <h1>Welcome to <br> <span class="title">FRESHTIME</span></h1>
         <p class="tagline">Unlock Your Full Potential</p>
 
+        <!-- sign in form starts -->
         <form action="dashboard.html">
             <label for="name"></label>
             <input type="text" id="name" placeholder="Name" required>
@@ -27,21 +37,25 @@
             <label for="password"></label>
             <input type="password" id="password" placeholder="password" required>
             <div class="rem-pass">
-                <input type="checkbox" id="checkbox" required>Remember Me </input>
+                <input type="checkbox" id="checkbox" required>Remember Me </input><label for="checkbox">.</label>
                 <p>Forget Password?</p>
             </div>
             <a href="dashboard.html"><button>Sign Up</button></a>
         </form>
+        <!-- sign in form ends -->
 
         <p>---(or)---</p>
 
+    <!-- other sign in starts -->
         <div class="other-signin">
-            <a href="dashboard.html"><i class="fa fa-google"></i></a>
+            <a href="dashboard.html" ><i class="fa fa-google"></i></a>
             <a href="dashboard.html"><i class="fa fa-facebook"></i></a>
             <a href="dashboard.html"><i class="fa fa-apple"></i></a>
         </div>
     </div>
+    <!-- other sign in ends-->
 
+    <!-- img added -->
     <img src="../assets/Images/sign-in pic.png" alt="" width="800px">
 </body>
 </html>

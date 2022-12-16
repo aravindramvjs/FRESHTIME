@@ -1,5 +1,8 @@
 # FRESHTIME
 
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_aravind.venkedeshwaran__web_project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_aravind.venkedeshwaran__web_project)
+
 Problem statement: https://docs.google.com/document/d/1bWn9zKMAqXi9ikubjkzkpMEa74Hko074SqCWMo3DMjQ/edit?usp=sharing
 
 Market Research: https://docs.google.com/document/d/1Kj57oDS71V6trVd4mM0hEmJ3R0QbnBz5onF7JuU6_SE/edit?usp=sharing
