@@ -1,7 +1,7 @@
 # FRESHTIME
 
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_aravind.venkedeshwaran__web_project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_aravind.venkedeshwaran__web_project)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_aravind.venkedeshwaran__web_project&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_aravind.venkedeshwaran__web_project)
 
 Problem statement: https://docs.google.com/document/d/1bWn9zKMAqXi9ikubjkzkpMEa74Hko074SqCWMo3DMjQ/edit?usp=sharing
 

@@ -3,61 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    
 }
 body{
     background-color: #f7f7ff;
 }
 .main{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     z-index: 3;
-}
-.circle1{
-    height: 20rem;
-    width: 20rem;
-    position: absolute;
-    top: 1%;
-    left: 2%;
-    border-radius: 50%;
-    background-color: #b5eeff;
-}
-.circle2{
-    height: 25rem;
-    width: 25rem;
-    position: fixed;
-    bottom: -10%;
-    right: -5%; 
-    border-radius: 50%;
-    background-color: #ceafee;
-    z-index: -1;
-}
-.circle3{
-    height: 2rem;
-    width: 2rem;
-    position: absolute;
-    bottom: 1%;
-    left: 40%; 
-    border-radius: 50%;
-    background-color: #5b347d;
-}
-.circle4{
-    height: 2rem;
-    width: 2rem;
-    position: absolute;
-    top: 2%;
-    right: 40%; 
-    border-radius: 50%;
-    background-color: #d08ff6;
-}
-.circle5{
-    height: 8rem;
-    width: 8rem;
-    position: absolute;
-    top: 1%;
-    right: 12%; 
-    border-radius: 50%;
-    background-color: #f9d0e7;
 }
 .sidepanel{
     position: fixed;
@@ -82,7 +35,7 @@ body{
     width: 100%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    
+
 }
 .sidepanel a:hover{
     background-color:#f7f7ff ;
@@ -136,7 +89,7 @@ body{
 .sidepanel.active{
     width: 280px;
 }
-.fa, .fas, .far{
+.fas, .far{
     min-width: 60px;
     color: black;
 }
@@ -158,61 +111,55 @@ body{
 .fa-hourglass:hover{
     transition: 1.5s;
     transform: rotateX(180deg);
+    /* transform: translateX(10px); */
 }
 .fa-user-ninja:hover{
     transition: 0.88s;
     transform: translate(10px);
 }
-.timer{
-    padding-top: 200px;
-    text-align: center;
-    padding-left: 100px;
-    background-color: #f7f7ff;
+.circle1{
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    border-radius: 50%;
+    background-color: #b5eeff;
 }
-.timer button{
-    padding: 8px 16px;
-    font-size: 22px;
-    border-radius: 40px;
-    background-color: white;
-    border: 2px solid black;
+.circle2{
+    height: 25rem;
+    width: 25rem;
+    position: fixed;
+    bottom: -10%;
+    right: -5%; 
+    border-radius: 50%;
+    background-color: #ceafee;
+    z-index: -1;
 }
-.timer-top button:hover{
-    background-color: black;
-    color: white;
+.circle3{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 1%;
+    left: 40%; 
+    border-radius: 50%;
+    background-color: #5b347d;
 }
-.timer-top button{
-    font-size: 30px;
-    margin: 20px;
-} 
-.timer-mid button{
-    border-radius: 15px;
-    margin: 20px 5px;
-    font-size: 24px;
+.circle4{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 2%;
+    right: 40%; 
+    border-radius: 50%;
+    background-color: #d08ff6;
 }
-.timer p{
-    font-size: 128px;
-}
-.timer-end button{
-    margin: 20px 5px;
-    border-radius: 50px;
-}
-.timer-end button:hover{
-    background-color: #f7f7ff;
-}
-.fa-repeat{
-    font-size: 30px;
-}
-#fullscreen{
-    margin-top: 15%;
-    margin-left: 5px;
-}
-#fullscreen img{
-    width: 30px;
-    height: 30px;
-}
-iframe{
-    margin-left: 60%;
-}
-.script{
-    z-index: 10;
+.circle5{
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top: 1%;
+    right: 12%; 
+    border-radius: 50%;
+    background-color: #f9d0e7;
 }
