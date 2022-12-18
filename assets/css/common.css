@@ -89,7 +89,7 @@ body{
 .sidepanel.active{
     width: 280px;
 }
-.fas, .far{
+.fas, .far,.fa-shield-halved{
     min-width: 60px;
     color: black;
 }

@@ -119,14 +119,22 @@
     background-color:white;
     opacity: 0;
 }
-#checkbox{
+#checkbox1,#checkbox2,#checkbox3{
     transform: scale(8.5,4);
     position: relative;
     bottom: 250px;
-    left: 1290px;
+    left: 1280px;
     z-index: 20;
     opacity: 0;
     cursor: pointer;
+}
+#checkbox2{
+    bottom: 150px;
+    left: 1260px;
+}
+#checkbox3{
+    bottom: 50px;
+    left: 1240px;
 }
 input:checked ~ .task-notes{
     opacity: 1;

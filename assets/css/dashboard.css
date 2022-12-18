@@ -42,7 +42,7 @@
     background-color: white;
 }
 .day-box:hover{
-    background-color: #ff8902;
+    background-color: #b5eeff;
 }
 .wrap{
     display: flex;
@@ -141,6 +141,7 @@
 .fa-comment,.fa-bell{
     font-size: 26px;
     margin-top: 20px;
+    margin-left: 15px;
 }
 .calendar p{
     margin-top: 20px;

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frestime | Leaderboard</title>
+
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/leaderboard.css">
+
+        <!-- adding favicon -->
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+
+    <!-- Ubuntu Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+
+    <!-- bootstrap for adding icon  -->
+    <script
+    src="https://kit.fontawesome.com/ee40c53027.js"
+    crossorigin="anonymous"
+    integrity="">
+    </script>
+</head>
+<body>
+    <div class="main"> <!--The Total Page starts-->
+        <!-- Sidepanel starts -->
+        <div class="sidepanel">
+            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px"alt="logo"></a>
+            <a href="dashboard.html"><i class='fas fa-home'></i><span class="title">Home</span></a>
+            <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
+            <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span</a>
+            <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
+            <a href="journal-dashboard.html"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
+            <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span class="title">Leaderboard</span></a>
+            <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
+            <div class="toggle"></div>                        
+        </div>
+
+        <!-- Leaderboard starts -->
+        <div class="leaderboard">
+
+            <!-- Card starts -->
+            <div class="card">
+
+                <div class="heading">
+                    <button id="rank">RANK</button>
+                    <button id="people">PEOPLE</button>
+                    <button id="level">LEVEL</button>
+                    <button id="score">SCORE</button>
+                </div>
+
+                <!-- scorecard starts -->
+                <div class="scorecard">
+
+                    <div class="rank one" >
+                        <p>001 <i class="fa fa-arrow-up"></i></p>
+                        <div class="img-name">
+                            <img src="../assets/Images/profile.jpg" alt="profile " width="70px" > 
+                            <p class="name">You</p>
+                        </div>
+                        <p><i class="fa fa-shield" ></i> &nbsp; 10 lvl</p>
+                        <p><i class="fas fa-bolt"></i>1500 XP</p>
+                    </div>
+
+
+                    <div class="rank two">
+                        <p>002 <i class="fa fa-arrow-up"></i></p>
+                        <div class="img-name">
+                            <img src="../assets/Images/stark.jpg" alt="profile" width="70px"> 
+                            <p class="name">Stark</p>
+                        </div>
+                        <p><i class="fa fa-shield"></i> &nbsp; 12 lvl</p>
+                        <p><i class="fas fa-bolt"></i>1400 XP</p>
+                    </div>
+
+
+                    <div class="rank three">
+                        <p>003 <i class="fa fa-arrow-down"></i></p>
+                        <div class="img-name">
+                            <img src="../assets/Images/bruce.jpg" alt="profile" width="70px"> 
+                            <p class="name">Bruce</p>
+                        </div>
+                        <p><i class="fa fa-shield"></i> &nbsp; 13 lvl</p>
+                        <p><i class="fas fa-bolt"></i>1200 XP</p>
+                    </div>
+
+
+                    <div class="rank four">
+                        <p>004 <i class="fa fa-arrow-up"></i></p>
+                        <div class="img-name">
+                            <img src="../assets/Images/steve.jpg" alt="profile" width="70px"> 
+                            <p class="name">Steve</p>
+                        </div>
+                        <p><i class="fa fa-shield"></i> &nbsp; 11 lvl</p>
+                        <p><i class="fas fa-bolt"></i>1050 XP</p>
+                    </div>
+
+
+                    <div class="rank five">
+                        <p>005 <i class="fa fa-arrow-down"></i></p>
+                        <div class="img-name">
+                            <img src="../assets/Images/thor.webp" alt="profile" width="70px"> 
+                            <p class="name">Thor</p>
+                        </div>
+                        <p><i class="fa fa-shield"></i> &nbsp; 20 lvl</p>
+                        <p><i class="fas fa-bolt"></i>1000 XP</p>
+                    </div>
+                </div>
+                <!-- scorecard starts -->
+        </div>
+        <!-- Card ends -->
+    
+        <!--invite friends starts  -->
+        <div class="invite-friends">
+            <h2>Friends Suggestion:</h2>
+            <div class="suggestion">
+                <img src="../assets/Images/sm10.jpg" alt="profile" width="100px" height="60px">
+                <p>SuperMan</p>
+                <p class="friend">one of your fb friend</p>
+                <button>Follow</button>
+            </div>
+
+            <div class="suggestion">
+                <img src="../assets/Images/balogo.jpg" alt="profile" width="50px" height="50px">
+                <p>Black Adam</p>
+                <p class="friend">one of your insta friend</p>
+                <button>Follow</button>
+            </div>
+
+
+            <div class="social-invite">
+                <button id="fb"><i class="fa fa-facebook-square"></i> Invite Friends on Facebook</button>
+                <button id="tweet"><i class="fa fa-twitter"></i> &nbsp; Invite Friends on Twitter &nbsp; &nbsp; </button>
+                <button id="wb"><i class="fa fa-whatsapp"></i> &nbsp; Invite Friends on Whatsapp</button>
+                <!-- <button id="insta"><i class="fa fa-instagram"></i> &nbsp; Invite Friends on Instagram</button> -->
+            </div>
+        </div>
+        <!--invite friends ends  -->
+    </div>
+    <!-- Leaderboard starts -->
+</div>
+     <!-- circle starts -->
+     <div class="circle1"></div>
+     <div class="circle2"></div>
+     <div class="circle3"></div>
+     <div class="circle4"></div>
+     <div class="circle5"></div>
+     <!-- circle ended -->
+ 
+     <!-- pin script sterted -->
+     <script>
+         let sidepanel = document.querySelector('.sidepanel');
+         let toggle = document.querySelector('.toggle');
+         toggle.onclick = function(){
+             sidepanel.classList.toggle('active')
+         }
+         
+     </script>
+     <!-- pin script ended -->
+</body>
+</html>

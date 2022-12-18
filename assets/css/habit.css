@@ -1,8 +1,10 @@
-.habit{
+.circle2,.circle3{
+    display: none;
+}.habit{
     margin-left: 300px;
     padding-top: 50px;
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
 }
 .main-habit{
     height: 100%;
@@ -20,7 +22,7 @@
 .addnew{
     padding: 20px;
     background-color: white;
-    font-size: 20px;
+    font-size: 18px;
     color: #2793f8;
     border-radius: 15px;
     height: 60px;
@@ -43,7 +45,7 @@
     display: flex;
 }
 .overview button{
-    font-size: 22px;
+    font-size: 18px;
     background-color: #eef2fb;
     color: #aeb4bd;
     border: none;
@@ -78,8 +80,8 @@
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .fa-arrow-up{
-    margin-right: -35px;
     color: green;
     font-size: 22px;
 }
@@ -88,7 +90,7 @@
     margin-left: 150px;
 }
 .weekdays p{
-    margin-right: 45px;
+    margin-right: 35px;
     font-size: 22px;
 }
 .habit-label{
@@ -155,7 +157,7 @@
 .habit-streak{
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     width: 100%;
 }
 .done button{
@@ -184,7 +186,10 @@
 .streak{
     font-size: 22px;
 }
-.habit-streak .fa, .habit-streak .fas{
+.habit-streak .fa{
+    margin-right: 5px;
+}
+.habit-streak .fa-heartbeat,.habit-streak .fa-book-reader{
     margin-right: -30px;
 }
 .habit1:hover, .habit4:hover, .habit6:hover{

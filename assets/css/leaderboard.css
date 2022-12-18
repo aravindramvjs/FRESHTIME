@@ -1,0 +1,127 @@
+.circle1, .circle5{
+    z-index: -5;
+}
+.leaderboard{
+    margin-left: 320px;
+    display: flex;
+    padding-top: 100px;
+}
+img{
+    cursor: pointer;
+}
+.card{
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    backdrop-filter: blur(10px);
+}
+.heading button{
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    width: 100px;
+    
+}
+#people, #level, #score{
+    margin-left: 80px;
+}
+#level{
+    margin-left: 130px;
+}
+#rank{
+    margin-left: 30px;
+}
+.rank{
+    width: 710px;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.one{
+    background-color: #e91e63;
+}
+.two{
+    background-color: #9c27b0;
+}
+.three{
+    background-color: #673ab7;
+}
+.four{
+    background-color: #2196f3;
+}
+.five{
+    background-color: #00bcd4;
+}
+
+.rank img,.invite-friends img{
+    border-radius: 50%;
+}
+.img-name{
+    display: flex;
+    align-items: center;
+}
+.name{
+    font-size: 22px;
+    padding-left: 20px;
+} 
+.fa-shield,.fa-bolt{
+    color: gold;
+}
+.fa-bolt{
+    margin-right: -40px;
+}
+.invite-friends{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 15px;
+    width: 350px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    backdrop-filter: blur(10px);
+}
+.suggestion{
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.suggestion p{
+    margin-top: 10px;
+}
+.suggestion button,.social-invite button{
+    margin-top: 10px;
+    color: white;
+    background-color: #00b3fd;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.friend{
+    color: grey;
+}
+.social-invite{
+    text-align: center;
+    margin-top: 50px;
+}
+#fb{
+    background-color: #3b5998 ;
+}
+#wb{
+    background-color: #25D366;
+}
+#insta{
+    background-color: #C13584;
+}

@@ -43,15 +43,15 @@
     font-size: 900;
     cursor: pointer;
 }
-.hero-section{
+.hero-row,.journal-row{
     display: flex;
     font-size: 22px;
     margin-bottom: 150px;
 }
 .hero-left{
-   padding: 200px 220px 50px 150px;
+   padding: 200px 200px 50px 150px;
 }
-.hero-left h1{
+.hero-left h1,.journal h1{
     margin-bottom: 20px;
 }
 .time-img{
@@ -71,7 +71,7 @@
     margin-left: 0px;
     font-size: 16px;
     font-weight: 600;
-
+    cursor: pointer;
 }
 .remind-btn{
     background-color: #eef4f9;
@@ -84,64 +84,94 @@
     margin-top: 20px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
-.row-1{
+.meditate-row{
     display: flex;
     background-color: #80cfff;
     border-radius: 60px;
-    margin: 50px;
+    margin: 30px;
     height: 650px;
 }
-.row-1 img{
+.meditate-row img{
     padding: 10px ;
     margin-left: -10px;
     border-radius: 60px;
 }
-.row-1-right{
+.meditate-right{
     padding: 200px 100px 10px 0px;
     color: white;
     font-size: 22px;
 }
+.text{
+    color: orange;
+}
 .text-2{
     color: black;
 }
-.row-1-right p{
+.meditate-right p{
     margin: 20px 0px 20px 0px;
 }
-.row-2{
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 60px;
+.works-row{
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
-.row-2-left{
-    padding: 200px ;
+.head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.head-para{
     font-size: 20px;
-    
-}
-.row-2 img{
-    margin: 50px;
-    border-radius: 50%;
-
-}
-.row-2-left p{
+    color: grey;
     margin: 20px 0px 20px 0px;
 }
-.row-3{
+.steps{
     display: flex;
-    background-color: #e2dff7;
-    border-radius: 60px;
-    margin: 50px;
-    padding: 40px;
-    height: 650px;
+    width: 100%;
+    padding: 20px;
 }
-.row-3-right{
+.goals, .cue, .progress{
+    margin-left: 150px;
+}
+.steps p{
+    margin: 20px 0px 20px 0px;
+    font-size: 18px;
+    color: grey;
+}
+.report-row,.journal-row{
+    display: flex;
+    border-radius: 60px;
+    margin: 150px 50px 50px 50px;
+    padding: 40px;
+    height: 600px;
+}
+.habit-row{
+    display: flex;
+    color: black;
+    margin: 50px;
+    border-radius: 60px;
+}
+.habit-row img{
+    border-radius: 60px;
+}
+.report-right,.habit{
     padding: 100px;
     font-size: 22px;
 }
-.row-3-right p{
+.report-row p,.habit p{
     margin: 20px 0px 20px 0px;
 }
-
+.journal-row{
+    background-color: #f0c419;
+    color: black;
+}
+.journal{
+    padding-top: 150px;
+    padding-left: 100px;
+}
+.journal h1{
+    color: white;
+}
 footer{
     background-color:aliceblue;
     display: flex;
@@ -192,7 +222,14 @@ footer{
     width: 100px;
     height: 40px;
     background-color: #FD346E;
-    color: black;
+    color: white;
     border: none;
     border-radius: 15px;
+}
+.logo-footer{
+    display: flex;
+}
+.logo-footer h1{
+    margin-top: 10px;
+    margin-left: 15px;
 }
