@@ -3,9 +3,7 @@ About:
 
 FRESHTIME Is a Time Management Website, in which you can add task, set a timer, work on your focus, and get your productivity score. and freshtime also has journal to track your thought and it also has habit tracker you can also track your habit. FRESHTIME IS ONE STEP SOLUTION TO ALL YOUR TIME RELATED PROBLEMS :)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbd91f27-7205-472e-a05b-d3bd6127e6a1/deploy-status)](https://app.netlify.com/sites/freshtime/deploys)
-
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_aravind.venkedeshwaran__web_project&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_aravind.venkedeshwaran__web_project)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=aravindramvjs_FRESHTIME&metric=bugs)](https://sonarcloud.io/summary/new_code?id=aravindramvjs_FRESHTIME)
 
 Problem statement: https://docs.google.com/document/d/1bWn9zKMAqXi9ikubjkzkpMEa74Hko074SqCWMo3DMjQ/edit?usp=sharing
 
