@@ -32,96 +32,73 @@
 </head>
 
 <body>
-  <!-- main container started -->
-        <div class="main">
-              <!-- sidepanel started -->
-                <div class="sidepanel">
-                    <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
-                    <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
-                    <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
-                    <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
-                    <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
-                    <a href="journal-dashboard.html"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
-                    <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span class="title">Leaderboard</span></a>
-                    <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
-                    <div class="toggle"></div>
-                </div>
-                <!-- sidepanel ended -->
-
-                <!-- timer started -->
-                <div class="timer">
-                    <div class="timer-top">
-                        <a href="timer.html"><button><img src="../assets/Images/tomato-icon.svg" alt="tomoto" width="30px"> Pomodoro</button></a>
-                        <a href="#"><button><img src="../assets/Images/icons8-naruto.svg" alt="naruto" width="30px"> Animedoro</button></a>
-                    </div>
-
-                    <br>
-
-                    <div class="timer-mid">
-                        <button><img src="../assets/Images/work.png" alt="timer" width="24px"> Work</button>
-                        <button><img src="../assets/Images/movie.png" alt="long break" width="24px"> Movies</button>
-                    </div>
-
-                    <p>50:00</p>
-
-                    <div class="timer-end">
-                        <button ><img src="../assets/Images/start.gif" alt="start" width="20px"> Start</button>
-                        <button><img src="../assets/Images/PAUSE.gif" alt="" width="20px"> Pause</button>
-                        <i class="fa fa-repeat"></i> 
-                    </div>
-
-                        <!-- spotify playlist starts -->
-                        <iframe 
-                        title="Navigation menu"
-                        style="border-radius:12px" 
-                        src="https://open.spotify.com/embed/playlist/1XeqqIzxG7in2g0I0DCAFQ?utm_source=generator&theme=0" 
-                        height="80px" 
-                        width="20%" 
-                        allowfullscreen="" 
-                        frameBorder="0" 
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                        loading="lazy" >
-                        </iframe>
-                        <!-- spotify playlist script ends -->
-
-                        <!-- Full/ close screen Script starts -->
-                        <button onclick="closeFullscreen();" id="fullscreen" aria-label="fullscreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
-                        <button onclick="openFullscreen();" id="fullscreen" aria-label="closescreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
-            
-                        <script>
-                        var elem = document.querySelector('.timer');
-                        function openFullscreen() {
-                          if (elem.requestFullscreen) {
-                            elem.requestFullscreen();
-                          } else if (elem.webkitRequestFullscreen) { /* Safari */
-                            elem.webkitRequestFullscreen();
-                          } else if (elem.msRequestFullscreen) { /* IE11 */
-                            elem.msRequestFullscreen();
-                          }
-                       }
-            
-                        function closeFullscreen() {
-                          if (document.exitFullscreen) {
-                            document.exitFullscreen();
-                          } else if (document.webkitExitFullscreen) { /* Safari */
-                            document.webkitExitFullscreen();
-                          } else if (document.msExitFullscreen) { /* IE11 */
-                            document.msExitFullscreen();
-                          }
-                        }
-                        </script>
-
-                        <!-- Full/close screen script ends -->
-                </div><!-- timer ends -->
-            <!-- pin script -->
-            <script>
-                let sidepanel = document.querySelector('.sidepanel');
-                let toggle = document.querySelector('.toggle');
-                toggle.onclick = function(){
-                    sidepanel.classList.toggle('active')
-                }
-            </script>
-
-        </div><!-- main--container ends -->
+<!-- timer started -->
+<div class="main">
+  <div class="timer">
+      <div class="timer-top">
+          <a href="timer.html"><button><img src="../assets/Images/tomato-icon.svg" alt="tomoto" width="30px"> Pomodoro</button></a>
+          <a href="#"><button><img src="../assets/Images/icons8-naruto.svg" alt="naruto" width="30px"> Animedoro</button></a>
+      </div>
+  
+      <br>
+  
+      <div class="timer-mid">
+          <button><img src="../assets/Images/work.png" alt="timer" width="24px"> Work</button>
+          <button><img src="../assets/Images/movie.png" alt="long break" width="24px"> Movies</button>
+      </div>
+  
+      <p>50:00</p>
+  
+      <div class="timer-end">
+          <button ><img src="../assets/Images/start.gif" alt="start" width="20px"> Start</button>
+          <button><img src="../assets/Images/PAUSE.gif" alt="" width="20px"> Pause</button>
+          <i class="fa fa-repeat"></i>
+      </div>
+  
+          <!-- spotify playlist starts -->
+          <iframe
+          title="Navigation menu"
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/1XeqqIzxG7in2g0I0DCAFQ?utm_source=generator&theme=0"
+          height="80px"
+          width="20%"
+          allowfullscreen=""
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy" >
+          </iframe>
+          <!-- spotify playlist script ends -->
+  
+          <!-- Full/ close screen Script starts -->
+          <button onclick="closeFullscreen();" id="fullscreen" aria-label="fullscreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
+          <button onclick="openFullscreen();" id="fullscreen" aria-label="closescreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
+  
+          <script>
+          var elem = document.querySelector('.timer');
+          function openFullscreen() {
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+              elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+              elem.msRequestFullscreen();
+            }
+          }
+  
+          function closeFullscreen() {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+              document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+              document.msExitFullscreen();
+            }
+          }
+          </script>
+  
+          <!-- Full/close screen script ends -->
+  </div><!-- timer ends -->
+</div>
+<script src="../assets/JS/template.js"></script>
 </body>
 </html>

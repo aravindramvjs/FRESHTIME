@@ -1,0 +1,165 @@
+.circle3{
+    display: none;
+}
+.journal{
+    margin-left: 350px;
+    padding-top: 20px;
+}
+.journal button{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 15px;
+    margin: 5px 5px 40px 5px ;
+    background-color: white;
+}
+ .welcome{
+    font-size: 18px;
+    color: #565657;
+    margin-top: 20px;
+    
+}
+.allnotes{
+    display:flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: 1150px;
+}
+.main_notes{
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 15px;
+    background-color: white;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.date{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;   
+}
+.dot{
+    margin-left: 150px;
+    margin-top: -5px;
+}
+.heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.tags button{
+    background-color: #e8e8e8;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.addnotes{
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    height: 60px;
+    width: 230px;
+    position: fixed;
+    left: 600px;
+    bottom: 50px;
+    background-color: #007bff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+} 
+.addnotes a{
+    text-decoration: none;
+    color: white;
+}
+.fa-plus{
+    margin-right: 10px;
+}
+.journal input, #notesinput{
+    border: none;
+    outline: none;
+    background-color: #F7F7FF;
+    cursor: pointer;
+    padding: 15px;
+}
+.journal h1, .journal h3{
+    padding: 15px;
+    margin-top: 5px;
+}
+.journal h3{
+    display: inline;
+}
+#headline{
+    font-size: 38px;
+    font-weight: 900;
+    height: 80px;
+    width: 100%;
+    margin-top: 50px;
+}
+#labellastmodified, #labeltags{
+    margin-top: -15px;
+    margin-left: 15px;
+    font-size: 22px;
+    color: #555555;
+}
+#lastmodified{
+    font-size: 22px;
+}
+
+.journal hr{
+    width: 1000px;
+    height: 2.5px;
+    background-color: #9d9d9d;
+    margin-top: 25px;
+}
+#notesinput{
+    cursor:text;
+    font-size: 28px;
+}
+.tagsbtn{
+    position: relative;
+    right: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.savenotes{
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    position: fixed;
+    left: 650px;
+    bottom: 50px;
+    background-color: #007bff;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.allnotes a{
+    text-decoration: none;
+    color: black;
+}
+.viewnotes{
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+} 
+.viewnotes p{
+    margin-top: 10px;
+}
+.viewnotes hr{
+    width: 250px;
+    margin-top: 2px;
+}
+.notes1{
+    padding-top: 10px;
+}

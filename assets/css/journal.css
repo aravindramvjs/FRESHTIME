@@ -1,5 +1,8 @@
+.circle3{
+    display: none;
+}
 .journal{
-    margin-left: 500px;
+    margin-left: 350px;
     padding-top: 20px;
 }
 .journal button{
@@ -11,7 +14,7 @@
     margin: 5px 5px 40px 5px ;
     background-color: white;
 }
-.welcome{
+/* .welcome{
     font-size: 18px;
     color: #565657;
     margin-bottom: 20px;
@@ -35,37 +38,59 @@
 h2{
     margin-top: 40px;
     margin-bottom: 40px;
+} */
+.allnotes{
+    display:flex;
+    margin-top: 50px;
 }
-.main-cont{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.main-cont button{
-    width: 500px;
-}
-.days{
-    display: flex;
-    padding: 20px;
-    
+.main_notes{
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 15px;
+    background-color: white;
+    margin-right: 80px;
+    margin-bottom: 50px;
 }
 .date{
-    height: 60px;
-    width: 60px;
-    padding: 10px;
-    margin-right: 30px;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }
-.days h5{
-    margin-top: 20px;
-}
-.reflection h3{
+.heading{
     font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.tags button{
+    background-color: #e8e8e8;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 5px;
     margin-top: 20px;
 }
-.reflection p{
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 20px;
+.row-1{
+    display: flex;
+}
+
+.addnotes{
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    height: 60px;
+    width: 230px;
+    position: fixed;
+    left: 600px;
+    bottom: 50px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+} 
+.fa-plus{
+    margin-right: 10px;
+   
 }

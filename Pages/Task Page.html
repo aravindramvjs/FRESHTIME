@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -12,21 +13,22 @@
     <!-- css file linked -->
     <link rel="stylesheet" href="../assets/css/task.css">
     <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/notify.css">
 
-        <!-- adding favicon -->
-        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+    <!-- adding favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
 
     <!-- ubuntu font link added -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
 
 
     <!-- bootstrap for adding icon  -->
-    <script
-    src="https://kit.fontawesome.com/ee40c53027.js"
-    crossorigin="anonymous"
-    integrity="">
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,135 +43,136 @@
 <body>
 
     <!-- main container of task starts  -->
-        <div class="main">
+    <div class="main">
 
-            <!-- sidepanel starts -->
-                <div class="sidepanel">
-                        <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
-                        <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
-                        <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
-                        <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
-                        <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
-                        <a href="journal-dashboard.html"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
-                        <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span class="title">Leaderboard</span></a>
-                        <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
-                        <div class="toggle"></div>                        
-                    </div>
-                    <!-- sidepanel ends -->
+        <!-- sidepanel starts -->
+        <div class="sidepanel">
+            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
+            <a href="dashboard.html"><i class='fas fa-home'></i><span class="title">Home</span></a>
+            <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
+            <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
+            <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
+            <a href="notesall.html"><i class='far fa-paper-plane'></i><span class="title">Notes</span></a>
+            <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span
+                    class="title">Leaderboard</span></a>
+            <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
+            <div class="toggle"></div>
+        </div>
+        <!-- sidepanel ends -->
 
-                    <!-- task section starts -->
-                    <div class="task-page">
-                        <div class="top">
-                            <p class="top-1">Good Morning, Aravind <span class="dot">.</span></p>
-                            <p class="top-2">If not now. When?</p>
-                            <div class="date-task">
-                                <p><span class="day">Mon</span> <br> <span class="date">19</span> <br> <span class="day">Dec</span></p>
-                            <label for="add-task"></label>
-                            <input type="text" id="add-task" placeholder="+  Add Task...">
-                            <button class="addbtn">ADD</button>
-                        </div>
-                        </div>
+        <!-- task section starts -->
+        <div class="task-page">
+            <div class="top">
+                <p class="top-1">Good Morning, Aravind <span class="dot">.</span></p>
+                <p class="top-2">If not now. When?</p>
+                <div class="date-task">
+                    <p><span class="day">Mon</span> <br> <span class="date">19</span> <br> <span class="day">Dec</span>
+                    </p>
+                    <input for="taskinput" type="text" name="addtask"id="add-task" placeholder="+  Add Task..." autofocus>
+                    <button id="addbtn" onclick="addtask()">ADD</button>
+                </div>
+            </div>
 
-                        
-                        <div class="main-cont">
+
+            <!-- <div class="main-cont">
 
                             <div class="headers">
                                 <p>Task</p>
                                 <p>Due Date</p>
                                 <p>Priority</p>
                                 <p>Progress</p>
-                            </div>
+                            </div> -->
 
-                            <!-- each task added -->
-                            <div class="task-list">
-                
-                                <p>Project <br>Layout</p>
-                                <p>19 Dec 2022, <br>5:00 Pm</p>
-                                <p>High <br>Priority</p>
-                                <p class="inprogress">Inprogress</p>
-                                <button class="start">Start</button>
-                            </div>
-                            <!-- each task ends -->
-
-                            <!-- each task added -->
-                            <div class="task-list">
-                
-                                <p>Project <br>Layout</p>
-                                <p>19 Dec 2022, <br>5:00 Pm</p>
-                                <p>High <br>Priority</p>
-                                <p class="inprogress">Inprogress</p>
-                                <button class="start">Start</button>
-                            </div>
-                            <!-- each task ends -->
-                            
-                            <!-- each task added -->
-                            <div class="task-list">
-                
-                                <p>Project <br>Layout</p>
-                                <p>19 Dec 2022, <br>5:00 Pm</p>
-                                <p>High <br>Priority</p>
-                                <p class="inprogress">Inprogress</p>
-                                <button class="start">Start</button>
-                            </div>
-                            <!-- each task ends -->
-                        </div>                      
-                    </div>
-                    <!-- task section ends -->
-
-            <!-- task description page starts  -->
-            <input type="checkbox" id="checkbox1"><label for="checkbox">.</label>
-            <input type="checkbox" id="checkbox2"><label for="checkbox">.</label>
-            <input type="checkbox" id="checkbox3"><label for="checkbox">.</label>
-
-            <div class="task-notes">
-
-
-                <h2>Task Name #01</h2>
-
-                <button><i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me</button>
-                <Button><i class="fa fa-hashtag" style="color:violet"></i>Tags</Button>
-                <button><i class="fa fa-user"></i>Personal</button>
-                <button><i class="fa fa-suitcase" style="color:skyblue"></i>Work</button> <br>
-
-                <label for="date">Due Date: </label>
-                <input type="date" id="date"> <br>
-
-                <label for="Priority">Priority Of Your Task: </label>
-                <select name="Priority" id="Priority">
-                    <option value="Less Priority">Less Priority</option>
-                    <option value="Mid Priority">Mid Priority</option>
-                    <option value="High Priority">High Priority</option>
-                    <option value="Waste Of Time">Waste Of Time</option>
-                </select>
-
-
-                <h3>Notes:</h3>
-
-                <input type="text" placeholder="Insert Your Notes Here" id="notes">
-                <h3>Sub Task:</h3>
-                <input type="radio" id="radio" aria-label="sub-task"><span id="sub-task">Add New Sutask</span></input> <label for="radio">.</label>
-                <h3>Attachment:</h3>
-                <p class="files">Click here to add / drop your files here</p>
+            <div class="addtasks">
+                <ul id="tasklist"></ul>
+                <div id="task_notes_active"></div>
             </div>
-            <!-- task description page ends  -->
 
-                <!-- circle starts -->
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
-                <div class="circle5"></div>
-            </div>
-            <!-- circle ends -->
-<!-- pin script starts -->
-<script>
-    let sidepanel = document.querySelector('.sidepanel');
-    let toggle = document.querySelector('.toggle');
-    toggle.onclick = function(){
-        sidepanel.classList.toggle('active')
-    }
-</script>
-<!-- pin script ends -->
 
+            <!-- each task added -->
+            <!-- <div class="task-list">
+                
+                                <p>Project <br>Layout</p>
+                                <p>19 Dec 2022, <br>5:00 Pm</p>
+                                <p>High <br>Priority</p>
+                                <p class="inprogress">Inprogress</p>
+                                <button class="start">Start</button>
+                            </div> -->
+            <!-- each task ends -->
+
+            <!-- each task added -->
+            <!-- <div class="task-list">
+                
+                                <p>Project <br>Layout</p>
+                                <p>19 Dec 2022, <br>5:00 Pm</p>
+                                <p>High <br>Priority</p>
+                                <p class="inprogress">Inprogress</p>
+                                <button class="start">Start</button>
+                            </div> -->
+            <!-- each task ends -->
+
+            <!-- each task added -->
+            <!-- <div class="task-list">
+                
+                                <p>Project <br>Layout</p>
+                                <p>19 Dec 2022, <br>5:00 Pm</p>
+                                <p>High <br>Priority</p>
+                                <p class="inprogress">Inprogress</p>
+                                <button class="start">Start</button>
+                            </div> -->
+            <!-- each task ends -->
+            <!-- </div>                       -->
+        </div>
+        <!-- task section ends -->
+
+        <!-- task description page starts  -->
+        <input type="checkbox" id="checkbox1"><label for="checkbox">.</label>
+        <input type="checkbox" id="checkbox2"><label for="checkbox">.</label>
+        <input type="checkbox" id="checkbox3"><label for="checkbox">.</label>
+
+        <div class="task-notes">
+
+
+            <h2>Task Name #01 <span id="close">&times;</span></h2>
+
+            <button><i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me</button>
+            <Button><i class="fa fa-hashtag" style="color:violet"></i>Tags</Button>
+            <button><i class="fa fa-user"></i>Personal</button>
+            <button><i class="fa fa-suitcase" style="color:skyblue"></i>Work</button> <br>
+
+            <label for="date">Due Date: </label>
+            <input type="date" id="date"> <br>
+
+            <label for="Priority">Priority Of Your Task: </label>
+            <select name="Priority" id="Priority">
+                <option value="Less Priority">Less Priority</option>
+                <option value="Mid Priority">Mid Priority</option>
+                <option value="High Priority">High Priority</option>
+                <option value="Waste Of Time">Waste Of Time</option>
+            </select>
+
+
+            <h3>Notes:</h3>
+
+            <input type="text" placeholder="Insert Your Notes Here" id="notes">
+            <h3>Sub Task:</h3>
+            <input type="radio" id="radio" aria-label="sub-task"><span id="sub-task">Add New Sutask</span></input>
+            <label for="radio">.</label>
+            <h3>Attachment:</h3>
+            <p class="files">Click here to add / drop your files here</p>
+        </div>
+        <!-- task description page ends  -->
+    </div>
+        <!-- circle starts -->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+    
+    <!-- circle ends -->
 </body>
+<script src="../assets/JS/task.js"> </script>
+<script src="../assets/JS/template.js"></script>
+<script src="../assets/JS/notify.js"></script>
 </html>

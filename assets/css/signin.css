@@ -79,3 +79,27 @@ img{
     font-size: 28px;
     cursor: pointer;
 }
+@media (max-width: 1024px){
+    img{
+        width: 500px;
+    }
+    .signinform{
+        width: 300px;
+        margin-left: 0;
+        margin-top: 30%;
+    }
+}
+@media(max-width: 768px) {
+    img{
+        display: none;
+    }
+    .signinform{
+        width: 300px;
+        margin: 10%;
+        margin-left: 0;
+        
+    }
+}
+input:valid{
+    border-color: green;
+}

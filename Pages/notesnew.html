@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- web page title  -->
+    <title>FRESHTIME | Journal</title>
+
+    <!-- style sheet added -->
+    <link rel="stylesheet" href="../assets/css/journal.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <!-- adding favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+
+    <!-- Nunito Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+    
+    <!-- bootstrap for adding icon  -->
+    <script
+    src="https://kit.fontawesome.com/ee40c53027.js"
+    crossorigin="anonymous"
+    integrity="">
+    </script>
+
+</head>
+<body>
+    <div class="main"> <!--The Total Page starts-->
+        <!-- Sidepanel starts -->
+        <div class="sidepanel">
+            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
+            <a href="dashboard.html" ><i class='fas fa-home'></i><span class="title">Home</span></a>
+            <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
+            <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
+            <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
+            <a href="journal-dashboard.html"><i class='far fa-paper-plane'></i><span class="title">Journal</span></a>
+            <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span class="title">Leaderboard</span></a>
+            <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
+            <div class="toggle"></div>                        
+        </div>
+        <!-- sidepanel ends -->
+
+
+        <!-- journal starts -->
+        <div class="journal">
+            <a href="journal-dashboard.html"><button>Dashboard</button></a>
+            <a href="journal.html"><button>Journal</button></a>
+            <h1>Good Morning, Aravind!</h1>
+            <p class="welcome">Today | 19 Dec 2022</p>
+            
+            <!-- the reflections started -->
+            <div class="reflection">
+                <h3>Morning Thoughts:</h3>
+                <p>1.Omg! I'm having too much to do's to do </p>
+                <p>2.I also has lot of movies and anime is waiting to see.</p>
+                <p>3.Wow! The weather is really nice today</p>
+                <h3>Three Things I Grateful For!</h3>
+                <p>1.I'm Grateful for my good health </p>
+                <p>2.I'm Grateful for my good house</p>
+                <p>3.I'm Grateful for freshworks </p>
+                <h3>Todays's Important Thing To Focus On:</h3>
+                <p>1.Freshtime Development </p>
+                <h3>If I Have Time:</h3>
+                <p>1.watch naruto </p>
+                <p>2.Call dad</p>
+                <h3>One thing I could have done to make today better and how can I apply it tomorrow?</h3>
+                <p>1.self control - motivate yourself </p>
+                <h3>Brainstrom Ideas:</h3>
+                <p>1.explore dribble for webdesign ideas </p>
+                <h3>One Word Of The Day:</h3>
+                <p>1.pleasant </p>
+            </div>
+            <!--relection ended -->
+        </div> 
+    <!-- cicle starts -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <!-- circle ended -->
+
+    
+    <!-- pin script added -->
+    <script>
+        let sidepanel = document.querySelector('.sidepanel');
+        let toggle = document.querySelector('.toggle');
+        toggle.onclick = function(){
+            sidepanel.classList.toggle('active')
+        }
+        
+    </script>
+</body>
+</html>

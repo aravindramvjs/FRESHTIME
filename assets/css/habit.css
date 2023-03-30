@@ -1,4 +1,4 @@
-.circle2,.circle3{
+.circle1, .circle5{
     display: none;
 }.habit{
     margin-left: 300px;
@@ -10,7 +10,6 @@
     height: 100%;
     width: 70%;
     padding: 20px;
-    z-index: 10;
 }
 .main-habit-header p{
     color: #a3a8b7;
@@ -90,7 +89,7 @@
     margin-left: 150px;
 }
 .weekdays p{
-    margin-right: 35px;
+    margin-right: 50px;
     font-size: 22px;
 }
 .habit-label{
@@ -135,6 +134,7 @@
     width: 30%;
     padding: 20px;
     z-index: 10;
+    display: none;
 }
 .today-habit p{
     margin-top: 20px;
@@ -194,4 +194,125 @@
 }
 .habit1:hover, .habit4:hover, .habit6:hover{
     background-color: white;
+}
+.addnewhabit{
+    position: fixed;
+    left: 900px;
+    bottom: 5px;
+    height: 100vh;
+    width: 580px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color:white;
+    display: none;
+    animation-name: down;
+    animation-duration: 3s;
+}
+@keyframes down{
+    0%{transform: translateX(1200px);}
+    50%{transform: translateX(15px);}
+}
+.habitname{
+    display: flex;
+}
+.design p{
+    height: 140px;
+    width: 20px;
+    background-color: rgb(51, 192, 255);;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.habitnamemain{
+    margin-top: 20px;
+}
+.addnewhabit h2{
+    margin-top: 50px;
+}
+#habitdescription, #habitname{
+    border: none;
+    outline: none;
+    font-size: 26px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+#todohabit, #notdohabit{
+    margin-top: 40px;
+    font-size: 24px;
+
+}
+#notdohabit{
+    margin-left: 20px;
+}
+.weeklyfreq button{
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #007bff;
+    color: white;
+}
+.weeklyfreq button:hover{
+    background-color: white;
+    color: black;
+}
+#appt{
+    margin-top: 40px;
+}
+#timelabel{
+    font-size: 22px;
+    margin-right: 20px;
+}
+#addhabit{
+    background-color: #ffa031;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 250px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#close{
+    background-color: #eff0f3;
+    height: 10px;
+    width: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%;
+    color: #4f5a64;
+    position:relative;
+    top: -9px;
+    left: 120px;
+    cursor: pointer;
+}
+
+
+#habitlist li{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 24px;
+}
+
+#checktue, #checkthu, #checksat, #checksun{
+    margin-left: 60px;
+    height: 20px;
+    width: 20px;
+}
+#checkmon{
+    margin-left: 40px;
+    height: 20px;
+    width: 20px;
+}
+
+#checkwed, #checkfri{
+    margin-left: 70px;
+    height: 20px;
+    width: 20px;
 }

@@ -1,7 +1,7 @@
-.main{
+/* .main{
     position: fixed;
     z-index: 10;
-}
+} */
 .task-page{
     margin-left: 450px;
 }
@@ -49,7 +49,7 @@
     margin-right: -0px;
 }
 #add-task{
-    width: 450px;
+    width: 455px;
     height: 45px;
     border-radius: 5px;
     border: none;
@@ -58,8 +58,10 @@
     margin-left: 40px;
     margin-top: 25px;
     padding: 20px;
+    outline: none;
+    cursor: pointer;
 }
-.addbtn{
+#addbtn{
     width: 80px;
     height: 38px;
     background-color: #0083ff;
@@ -109,17 +111,27 @@
 }
 .task-notes{
     position: relative;
-    left: 500px;
-    bottom: 550px;
+    left: 480px;
+    bottom: 800px;
     height: 700px;
     width: 500px;
     padding: 20px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     background-color:white;
-    opacity: 0;
+    display: none;
+    animation-name: down;
+    animation-duration: 3s;
 }
-#checkbox1,#checkbox2,#checkbox3{
+@keyframes down{
+    0%{transform: translateY(-1200px);}
+    50%{transform: translateY(-10px);}
+}
+.task-notes h2 span{
+    float: right;
+    cursor: pointer;
+}
+/* #checkbox1,#checkbox2,#checkbox3{
     transform: scale(8.5,4);
     position: relative;
     bottom: 250px;
@@ -135,20 +147,15 @@
 #checkbox3{
     bottom: 50px;
     left: 1240px;
-}
-input:checked ~ .task-notes{
-    opacity: 1;
+} */
+/* #task_notes_active{ 
+    display: block;
+    opacity: 100;
     z-index: 7;
     animation-name: down;
     animation-duration: 3s;
-
-}
-
-@keyframes down{
-    0%{transform: translateY(-1200px);}
-    50%{transform: translateY(-10px);}
-}
-
+    visibility: visible;
+}  */
 .task-notes button{
     padding: 10px;
     font-size: 16px;
@@ -203,4 +210,57 @@ input:checked ~ .task-notes{
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
+}
+#deletebtn,#startbtn{
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 55px;
+    position:relative;
+    left: 100px;
+
+} 
+#startbtn{
+    background-color: #FABB18;
+    color: black;
+    margin: 20px;
+}
+
+
+#tasklist li{
+    list-style: none;
+    background-color: white;
+    margin: 30px;
+    width: 55%;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-left: -5px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+#tasklist span{
+    padding-top: 10px;
+    width: 250px;
+}
+
+#todosdescrip{
+    color: grey;
+    display: block;
+    font-weight: 500;
+    padding-top: 10px;
+}
+#taskspan{
+    margin-left: -100px;
+    cursor: pointer;
+}
+.addtasks{
+    height: 600px;
+    overflow: scroll;
 }

@@ -30,6 +30,7 @@
 .timer-end button{
     margin: 20px 5px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .timer-end button:hover{
     background-color: #f7f7ff;
@@ -50,4 +51,16 @@ iframe{
 }
 .script{
     z-index: 10;
+}
+#timer.active{
+    opacity: 1;
+    background-color: orange;
+}
+#break.active{
+    opacity: 1;
+    background-color: orange;
+}
+.time{
+    display: flex;
+    justify-content: center;
 }

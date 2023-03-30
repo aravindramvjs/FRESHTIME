@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- web page title  -->
+    <title>FRESHTIME | Journal</title>
+
+    <!-- style sheet added -->
+    <link rel="stylesheet" href="../assets/css/notes.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <!-- adding favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+
+    <!-- Nunito Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
+
+    <!-- bootstrap for adding icon  -->
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
+    </script>
+
+</head>
+
+<body>
+    <div class="main"> <!--The Total Page starts-->
+         <!-- journal starts -->
+        <div class="journal">
+            <h1>Good Morning, Aravind!</h1>
+            <p class="welcome"></p>
+            <!-- <form id="usernotesform">
+                <h1 id="headline">Heading</h1> <br>
+                <label id="labellastmodified">Last Modified: </label>
+                <h3 id="lastmodified">2023-03-26</h3> <br>
+                <hr>
+                <textarea name="usernotes" id="notesinput" cols="68" rows="20" placeholder="Type Notes Here"></textarea>
+                <button class="savenotes" id="savenotes">save</button>
+            </form> -->
+        </div>
+</body>
+<!-- pin script added -->
+<script>
+ let currentDate = new Date().toJSON().slice(0, 10)
+document.querySelector(".welcome").innerHTML = `<h3>Today | ${currentDate}</h3>`;
+</script>
+<script src="../assets/JS/selectednote.js"></script>
+<script src="../assets/JS/template.js"></script>
+</html>

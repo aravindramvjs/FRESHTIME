@@ -12,8 +12,6 @@
     
 }
 .profile-card{
-    width: 500px;
-    height: 800px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -27,9 +25,16 @@
 }
 .profile-card h2{
     margin-top: 20px;
-    margin-left: 32px;
     margin-bottom: -30px;
+    margin-left: 30px;
     color: #fe8018;
+}
+.profile-card span{
+    margin-left: -43px;
+    color:#fe8018;
+}
+.profile-card input{
+    width: 220px;
 }
 #name, #phonenumber, #email, #password{
     padding: 10px;
@@ -38,9 +43,13 @@
 #name, #phonenumber{
     margin-top: 60px;
 }
+#email, #password{
+    margin-bottom: 30px;
+}
 .save{
     margin-top: 50px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    margin-bottom: 20px;
     padding: 10px;
     font-size: 18px;
     border-radius: 15px;
@@ -49,6 +58,9 @@
     background: linear-gradient(to bottom right, #fe8018, #fe4c68);
     color: white;
     cursor: pointer;
+}
+.savendel{
+    margin-left: 150px;
 }
 .profile-right{
     margin-left: 100px;
