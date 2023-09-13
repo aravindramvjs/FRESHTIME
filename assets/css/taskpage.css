@@ -1,0 +1,616 @@
+:root{
+    --primaycolor : #283ce2;
+    --bgcolor: #fbfbfd;
+    --mainfont : 23px;
+    --subfont : 21px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    /* position: fixed; */
+}
+body{
+    position: fixed;
+}
+.taskpage{
+    display: flex;
+    position: fixed;
+}
+.taskaddcol{
+    width: 400px;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    padding: 15px;
+    margin-right: 40px;
+    border-radius: 30px ;
+}
+.dailycol{
+    margin-left: 270px;
+    padding-left: 80px;
+    width: 800px;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    
+    margin-right: 40px;
+    
+}
+.logosection{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logoimg{
+    width: 60px;
+    height: 50px;
+}
+.logosection p{
+    font-weight: 900;
+    font-size:26px;
+}
+.weeklyheader{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--subfont);
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+#viewall{
+    color: var(--primaycolor);
+    font-weight: 700;
+    font-size:  16px;
+}
+.weeklygoal{
+    width: 300px;
+}
+.goalcard{
+    width: 280px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+}
+.goaldiv{
+    display: flex;
+}
+#weeklygoalemoji{
+    width: 40px;
+    height: 40px;
+    /* margin: 20px; */
+    /* background-color: var(--primaycolor); */
+    z-index: 1;
+}
+#goaldetails{
+    margin-left: 30px;
+}
+#goal{
+    font-weight: 700;
+    font-size: 20px;
+}
+.additionaldetails{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.monthlycalendar img{
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+}
+.Todayschedule{
+    font-size: 40px;
+    font-weight: 700;
+}
+#date{
+    font-size: 36px;
+    color: var(--primaycolor);
+    font-weight: 700;
+    margin-top: 10px;
+}
+#addtaskplus{
+    height: 50px;
+    width: 50px;
+    background-color: var(--primaycolor);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    position: absolute;
+    top: 25px;
+    left: 987px;
+}
+.fa-plus{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 22px;
+    color: white;
+}
+#tasklist{
+    margin-top: 50px;
+    list-style: none;
+}
+.taskli{
+    /* list-style: none; */
+    display: flex;
+    margin-top: 25px;
+    width: 600px;
+    background-color: var(--primaycolor);
+    color: var(--bgcolor);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+}
+#nametask{
+    font-weight: 900;
+}
+.taskli img{
+    height: 40px;
+    width: 40px;
+    margin-left: -30px;
+}
+.fa-check{
+    color: black;
+    position: relative;
+    left: -60px;
+    font-size: 22px;
+}
+.taskli p:nth-of-type(1){
+  width: 170px;
+  margin-left: 20px;
+  word-wrap:break-word;
+  /* border: 1px solid white; */
+  text-align: left;
+}
+.taskli p:nth-of-type(2){
+  padding: 5px;
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  position: fixed;
+  left: 625px;
+}
+.taskli p:nth-of-type(3){
+    position:fixed;
+    left: 850px;
+}
+
+.taskli p:nth-of-type(4){
+    position: fixed;
+    /* top: 15px; */
+    left: 900px;
+}
+.taskaddcol{
+    padding: 30px;
+}
+/* .nameset{
+    margin-left: 20px;
+} */
+#username{
+    font-weight: 900;
+    font-size: 18px;
+}
+#setting{
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--primaycolor);
+}
+.profilesection {
+    display: flex;
+    justify-content: space-between;
+}
+.profilesection img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.music{
+    margin-top: 50px;
+}
+.time{
+    margin-top: 60px;
+}
+#timenow{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 36px;
+    font-weight: 900;
+}
+.temp{
+    display: flex;
+}
+#temptext{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.sun{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+.quotes{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.quotes h3{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#lastimg{
+    margin-top: 30px;
+
+}
+/* #taskaddcolplus{
+    height: 50px;
+    width: 50px;
+    background-color: var(--primaycolor);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    position: absolute;
+    top: 25px;
+    left: 987px;
+    color: green;
+} */
+
+.taskdetailsdiv {
+    display: none;
+    width: 550px;
+    height: 800px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    padding: 30px;
+  }
+  #tasknameinput {
+    /* display: block; */
+    border: none;
+    height: 50px;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  
+  .taskdetailsdiv button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .taskdetailsdiv input {
+    margin-left: 10px;
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 20px;
+    width: 135px;
+  }
+  
+  .taskdetailsdiv button:hover {
+    background-color: aliceblue;
+  }
+  
+  .fa-bell,
+  .fa-hashtag,
+  .fa-user {
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+  }
+  .taskdetailsdiv i{
+    color: #0083ff;
+  }
+  
+  .taskdetailsdiv input {
+    margin-left: 20px;
+  }
+  
+  #notesh3 {
+    margin-top: 20px;
+  }
+  
+  #notes, #notestd {
+    border: none;
+    font-size: 16px;
+    margin-bottom: -10px;
+    padding-top: 15px;
+  }
+  #canceldetailsdiv, #savedetailsdiv{
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 725px;
+    left: 350px;
+    cursor: pointer;
+  
+  }
+  
+  #canceldetailsdiv {
+    background-color: black;
+    margin-left: 80px;
+  }
+  
+  #savedetailsdiv {
+    background-color: #0083FF;
+  }
+  
+  
+  
+  /* timer css */
+  
+  
+  .clock {
+    padding: 3px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 30%;
+    font-size: 24px;
+    top: 50px;
+    left: -50px;
+  }
+  
+  .btn-group {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin-left: 70px;
+    margin-top: 100px;
+  }
+  
+  .btn-group button {
+    border-radius: 8px;
+  
+  }
+  
+  .break {
+    background: rgb(0, 199, 116);
+    color: #000000;
+  }
+  
+  .reset {
+    background: rgb(250, 69, 109);
+    color: #000000;
+  }
+  
+  .pause {
+    background: rgb(253, 143, 17);
+  }
+  
+  .resume {
+    background: rgb(131, 10, 252);
+    color: white;
+  }
+  
+  
+  .progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .progress-ring__circle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: rgb(51, 65, 255);
+  }
+  
+  
+  .danger {
+    stroke: rgb(243, 17, 28);
+    animation: pulse 0.9s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+  
+    0%,
+    100% {
+      transform: rotate(-90deg) scale(1);
+    }
+  
+    50% {
+      transform: rotate(-90deg) scale(1.05);
+    }
+  
+    75% {
+      transform: rotate(-90deg) scale(0.8);
+    }
+  }
+
+
+  /* to do button css*/
+/* .taskli *,
+.taskli *::before,
+.taskli *::after {
+  box-sizing: border-box;
+} */
+
+.taskli label {
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  left: -70px;
+}
+
+.taskli input {
+  visibility: hidden;
+  display: none;
+}
+
+.taskli input:checked ~ .checkbox {
+ transform: rotate(45deg);
+ width: 14px;
+ margin-left: 12px;
+ border-color: black;
+ border-top-color: transparent;
+ border-left-color: transparent;
+ border-radius: 0;
+}
+
+.taskli .checkbox {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 3px solid #434343;
+  border-radius: 6px;
+  transition: all 0.375s;
+}
+
+.datentime{
+    display: flex;
+}
+
+/* Calendar CSS */
+.wrapper{
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 15px 40px rgba(0,0,0,0.12); */
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid rgb(229, 228, 229);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    /* color: #333; */
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #9B59B6;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+  .active-day{
+    color: #fff;
+  }
+  .active-day::before {
+    background-color: #0083FF;
+  }
+
+
+  .tdheader{
+    display: flex;
+  }
+  /* emoji */
+  .emoji-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .emoji-menu-toggle {
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .emoji-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .emoji-menu-content button {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .emoji-menu-content button:hover {
+    background-color: #f1f1f1;
+  }

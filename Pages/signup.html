@@ -4,20 +4,25 @@
 <head>
 	<meta charset="UTF-8">
 
+	<!-- google sign in meta tag -->
+	<meta name="google-signin-client_id"
+		content="561479867362-oeds8n5l4m6sf5lor73h4c8114q411be.apps.googleusercontent.com">
+
 	<!-- page title added -->
 	<title>FRESHTIME | SIGNUP Form</title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- fontawesome icon link -->
 
+	<!-- linking css -->
 	<link rel="stylesheet" href="../assets/css/signup.css">
 
+	<!-- linking notify.css -->
+	<link rel="stylesheet" href="../assets/css/notify.css">
 
 	<!-- adding favicon -->
 	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
 
-
 	<!-- ubuntu font link added -->
-	<link rel="stylesheet" href="../assets/css/signin.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -26,18 +31,21 @@
 	</style>
 
 	<!-- bootstrap for adding icon  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/ee40c53027.js" integrity="" crossorigin="anonymous">
 	</script>
-	<link rel="stylesheet" href="../assets/css/notify.css">
+
 </head>
 
 <body>
 
-
 	<!-- sign in form starts  -->
 	<div class="form-box">
 
-		<h1>Welcome to <br> <span class="title">FRESHTIME</span></h1>
+		<h1>
+			Welcome to <br>
+			<span class="title">FRESHTIME</span>
+		</h1>
 		<p class="tagline">Unlock Your Full Potential</p>
 
 		<div class="button-box">
@@ -48,28 +56,30 @@
 
 		<!-- Registeration form starts  -->
 		<form id="register" class="input-group">
-			<input type="name" name = "name" id="name" class="input-field" placeholder="Name" pattern="[A-Za-z]+"
-				title="Username doesn't contain spaces or number" required />
-			<input type="email" name="email" id="email" class="input-field" placeholder="Email" required />
+			<input type="name" name="name" id="name" class="input-field" placeholder="Name" pattern="[A-Za-z]+"
+				title="Username doesn't contain spaces or number" required>
+			<input type="email" name="email" id="email" class="input-field" placeholder="Email" required>
 			<input type="password" name="password" id="password" class="input-field" placeholder="Password"
 				pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,32}$"
 				title="Password Should be Atleast 8 Characters and Should Contain Atleast One Uppercase, One LowerCase, One Number and One Special Charecter"
-				required />
+				required>
 
-			<input type="checkbox" class="check-box" required /><span>I agree to the terms & conditions</span>
+			<input type="checkbox" class="check-box" required>
+			<span>I agree to the terms & conditions</span>
 			<button type="submit" class="submit-btn">Register</button>
 		</form>
 
 		<!-- log in form starts  -->
 		<form id="login" class="input-group">
-			<input type="text" name="emaillogin" id="emaillogin" class="input-field" placeholder="Name or Email" required />
-			<input type="password" name="passwordlogin" id="passwordlogin" class="input-field" placeholder="Password" required />
-			<input type="checkbox" class="check-box" /><span>Remember Password</span>
+			<input type="text" name="emaillogin" id="emaillogin" class="input-field" placeholder="Name or Email"
+				required>
+			<input type="password" name="passwordlogin" id="passwordlogin" class="input-field" placeholder="Password"
+				required>
+			<input type="checkbox" class="check-box">
+			<span>Remember Password</span>
 			<button type="submit" class="submit-btn">Log In</button>
 			<!-- <a href="profile.html"></a> -->
 		</form>
-
-
 
 		<!-- sign in form ends -->
 
@@ -77,16 +87,74 @@
 
 		<!-- other sign in starts -->
 		<div class="other-signin">
-			<a href="/Pages/profile.html"><i class="fa fa-google"></i></a>
-			<a href="/Pages/profile.html"><i class="fa fa-facebook"></i></a>
-			<a href="/Pages/profile.html"><i class="fa fa-apple"></i></a>
+			<button id="gsign">
+				<img src="../assets/Images/gogle icon.png" alt="Google Iocn" id="googleicon"> Sign In With Google
+			</button>
+			<!--<a href="/Pages/profile.html"><i class="fa fa-facebook"></i></a>
+			<a href="/Pages/profile.html"><i class="fa fa-apple"></i></a> -->
+
 		</div>
 
 		<!-- other sign in ends -->
 	</div>
 
 	<img src="../assets/Images/sign-in pic.png" alt="" width="800px">
+
 	<script src="../assets/JS/signup.js"></script>
 	<script src="../assets/JS/notify.js"></script>
+	<!-- google sign in  -->
+	<!-- <script src="../assets/JS/googlesignin.js"></script> -->
+
 </body>
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+	// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+	import { getAuth, GoogleAuthProvider, signInWithRedirect  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyC_yoXpNb3JYgh-9Z9sNdi7qUipEBAUAig",
+	  authDomain: "freshtime-gsignin.firebaseapp.com",
+	  projectId: "freshtime-gsignin",
+	  storageBucket: "freshtime-gsignin.appspot.com",
+	  messagingSenderId: "1071273046632",
+	  appId: "1:1071273046632:web:0101e0490c8d6c0f1441dd",
+	  measurementId: "G-141JC2HRRS"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const provider = new GoogleAuthProvider();
+	const auth = getAuth(app)
+
+	document.getElementById("gsign").addEventListener('click',()=>{
+		signInWithRedirect(auth, provider);
+
+		getRedirectResult(auth)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access Google APIs.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;               
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+	})
+  </script>
+
 </html>

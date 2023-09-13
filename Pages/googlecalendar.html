@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Calendar API Quickstart</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <p>Google Calendar API Quickstart</p>
+
+    <!-- Add button to authorize and create an event -->
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize and Create Event</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    <script src="../assets/JS/googlecalendar.js"></script>
+    <script src="https://apis.google.com/js/api.js" onload="gapiLoaded()" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" onload="gisLoaded()" async defer></script>
+</body>
+
+</html>

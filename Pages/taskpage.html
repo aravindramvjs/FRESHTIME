@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESHTIME |Task Page</title>
+
+    <!-- css file linked -->
+    <link rel="stylesheet" href="../assets/css/taskpage.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/notify.css">
+    <!-- <link rel="stylesheet" href="../assets/css/emojionearea.css"> -->
+
+    <!-- adding favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+
+    <!-- ubuntu font link added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
+
+    <!-- bootstrap for adding icon  -->
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
+    </script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="main">
+        <div class="taskpage">
+        
+            <div class="dailycol">
+                <div class="dailyheader">
+                    <div>
+                        <p class="Todayschedule">Today's Schedule</p>
+                        <div class="datentime">
+                            <p id="date"></p>
+                            <p id="timenow"></p>
+                        </div>
+                    </div>
+                    <p id="addtaskplus"><i class="fa fa-plus"></i></p>
+                </div>
+                
+                <div id="tasklist">
+                    
+                    <!-- <div class="taskli">
+                        <p><i class="fa fa-check"></i></p>
+                        <img src="../assets/Images/clock img.png" alt="">
+                        <p id="task">Complete Task Page</p>
+                        <p>5:00 PM</p>
+                    </div>
+                    <div class="taskli">
+                        <p><i class="fa fa-check"></i></p>
+                        <img src="../assets/Images/clock img.png" alt="">
+                        <p id="task">Complete Task Page</p>
+                        <p>5:00 PM </p>
+                    </div>
+                    <div class="taskli">
+                        <p><i class="fa fa-check"></i></p>
+                        <img src="../assets/Images/clock img.png" alt="">
+                        <p id="task">Complete Task Page</p>
+                        <p>5:00 PM</p>
+                        <p>
+                            - Desing Layout <br>
+                            - Construct With HTML <br>
+                            - Style With CSS <br>
+                            - Dynamic with JS
+                        </p> 
+                    </div> -->
+                </div>
+            </div>
+            <div class="taskaddcol">
+                <div class="profilesection">
+                    <div class="nameset">
+                        <p id="username"></p>
+                        <P id="setting">My Settings</P>
+                    </div>
+                    <img src="../assets/Images/profile.jpg" alt="">
+                </div>
+                <div class="music">
+                    <iframe 
+                        style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/playlist/7wvGLBPv18q23xCfUfVTDv?utm_source=generator"
+                        width="100%" 
+                        height="100px" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; 
+                        clipboard-write; 
+                        encrypted-media; 
+                        fullscreen; 
+                        picture-in-picture" 
+                        loading="lazy">
+                </iframe>
+                </div>
+                <div class="calender">
+                <div class="wrapper">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+                <div class="quotes">
+                    <h3 id="quotenow"></h3>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ea sint praesentium </p> -->
+                    <!-- <div>
+                        <img src="../assets/Images/boy with mobile.png" alt="" height="150px" width="150px" id="lastimg">
+                        <p><i class="fa fa-plus" id="taskaddcolplus"></i></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="taskdetailsdiv">
+            <!-- <p id="breadcrums">FreshTime/Tasks <span>Close</span></p> -->
+            <div class="tdheader">
+                <div class="emoji-menu">
+                    <button class="emoji-menu-toggle">😊</button>
+                    <div class="emoji-menu-content">
+                      <button>🏃‍♂️</button>
+                      <button>🧘‍♂️</button>
+                      <button>💪</button>
+                      <button>🕕</button>
+                    </div>
+                  </div>
+                <input type="text" id="tasknameinput" placeholder="Task Name">
+            </div>
+
+            <button>
+                <i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me
+            </button>
+            <Button>
+                <i class="fa fa-hashtag" style="color:violet"></i>Tags
+            </Button>
+            <button>
+                <i class="fa fa-user"></i>Personal
+            </button> <br>
+            <!-- <label for="timeneeded"><i class="fa fa-clock-o"></i> Time Need:</label>
+            <input type="text" id="timeneededtd" placeholder="60 Min">
+            <br> -->
+            <label for="date"><i class='far fa-calendar-check'></i> Due Date: </label>
+            <input type="date" id="duedate">
+            <br>
+            <label for="time"><i class='fas fa-hourglass-start'></i> Starting Time: </label>
+            <input type="time" id="startingtime">
+            <br>
+            <label for="time"><i class='fas fa-hourglass-end'></i> Ending Time: </label>
+            <input type="time" id="endingtime">
+            <br>
+
+            <label for="Priority"><i class="fa fa-warning"></i> Priority: </label>
+            <select name="Priority" id="priority">
+                <option value="Less Priority">Less Priority</option>
+                <option value="Mid Priority">Mid Priority</option>
+                <option value="High Priority">High Priority</option>
+                <option value="Waste Of Time">Waste Of Time</option>
+            </select>
+
+            <h3 id="notesh3">Notes:</h3>
+            <textarea placeholder="Insert Your Notes Here" id="notes" rows="3" cols="45"></textarea>
+
+            <div class="timer">
+                <h3>Timer: </h3>
+                <div class="clock">
+                    <div class="mins">0</div>
+                    <div>:</div>
+                    <div class="secs">00</div>
+                    <audio src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+                    <svg class="progress-ring" height="120" width="120">
+                        <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="50" cx="60"
+                            cy="60" />
+                    </svg>
+                </div>
+
+                <div class="btn-group">
+                    <!-- <button class="start"><i class="fa-solid fa-play"></i>Start</button> -->
+                    <button class="pause"><i class="fa fa-pause"></i> Pause</button>
+                    <button class="reset"><i class="fa fa-undo"></i> Reset</button>
+                </div>
+            </div>
+
+
+            <button id="canceldetailsdiv">Cancel</button>
+            <button id="savetask">Save</button>
+        </div>
+
+    </div>
+
+<script src="../assets/JS/taskpage.js"></script>
+<script src="../assets/JS/template.js"></script>
+</body>
+</html>

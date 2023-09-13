@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- google sign in meta tag -->
+
     <title>Freshtime | Profile</title>
 
     <link rel="stylesheet" href="../assets/css/profile.css">
@@ -25,10 +27,13 @@
     <!-- bootstrap for adding icon  -->
     <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
     </script>
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="main"> <!--The Total Page starts-->
+    <div class="main">
+ <!--The Total Page starts-->
        <!-- profile starts -->
         <div class="profile">
 
@@ -37,7 +42,7 @@
 
                 <!-- profile card starts -->
                 <div class="profile-card">
-                    <img src="../assets/Images/profile.jpg" alt="profile">
+                    <img src="../assets/Images/profile.jpg" alt="profile" id="profilePic">
                     <h2>Profile:</h2>
 
                     <label for="name">
@@ -62,19 +67,24 @@
 
                     <div class="tag-line">
                         <h2>Statistics:</h2>
-                        <button><i class="fa fa-fire" style="font-size:18px;color:red"></i> &nbsp; 21 Day
+                        <button>
+<i class="fa fa-fire" style="font-size:18px;color:red"></i> &nbsp; 21 Day
                             Streak</button>
-                        <button><i class="fa fa-bolt" style="font-size:18px;color: gold;"></i> 1500 Total XP</button>
+                        <button>
+<i class="fa fa-bolt" style="font-size:18px;color: gold;"></i> 1500 Total XP
+</button>
                         <br>
-                        <button><i class="fa fa-shield" style="font-size:18px;color:gold"></i>&nbsp; Gold
+                        <button>
+<i class="fa fa-shield" style="font-size:18px;color:gold"></i>&nbsp; Gold
                             League</button>
-                        <button><i class="fa fa-trophy" style="font-size:18px;color:red"></i>&nbsp; 5 Times in Top
+                        <button>
+<i class="fa fa-trophy" style="font-size:18px;color:red"></i>&nbsp; 5 Times in Top
                             3's</button>
                     </div>
 
                     <div class="savendel">
                         <button class="save" onclick="editprofile()">Save</button>
-                        <button class="save" onclick="deleteprofile()">Delete</button>
+                        <button class="save" onclick="logout()">Sign Out</button>
                     </div>
                     
                 </div>
@@ -116,9 +126,15 @@
                 <div class="progress">
                     <h3>Acheived Task</h3>
                     <div class="achieved">
-                        <p>All Time <br> 100 Task</p>
-                        <p>This Week <br> 10 Task</p>
-                        <p>Today <br> 1 Task</p>
+                        <p>
+All Time <br> 100 Task
+</p>
+                        <p>
+This Week <br> 10 Task
+</p>
+                        <p>
+Today <br> 1 Task
+</p>
                     </div>
                 </div>
             </div>

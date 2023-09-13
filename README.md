@@ -3,7 +3,9 @@ About:
 
 FRESHTIME Is a Time Management Website, in which you can add task, set a timer, work on your focus, and get your productivity score. and freshtime also has journal to track your thought and it also has habit tracker you can also track your habit. FRESHTIME IS ONE STEP SOLUTION TO ALL YOUR TIME RELATED PROBLEMS :)
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=aravindramvjs_FRESHTIME&metric=bugs)](https://sonarcloud.io/summary/new_code?id=aravindramvjs_FRESHTIME)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bbd91f27-7205-472e-a05b-d3bd6127e6a1/deploy-status)](https://app.netlify.com/sites/freshtime/deploys)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_aravind.venkedeshwaran__web_project&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_aravind.venkedeshwaran__web_project)
 
 Problem statement: https://docs.google.com/document/d/1bWn9zKMAqXi9ikubjkzkpMEa74Hko074SqCWMo3DMjQ/edit?usp=sharing
 
@@ -36,6 +38,15 @@ Live Server: https://aravindramvjs.github.io/FRESHTIME/
         3. Click the "login" button.
     - Expected Result:
         - The user is redirected to the user profile page.
+
+### Sign In With Google
+- Scenario 1: Successfully create an account
+    - Steps:
+        1. Navigate to the registration page.
+        2. Click the sign in with google button.
+    - Expected Result:
+        - The user is redirected to the login page.
+
 
 ### Edit Profile
 - Scenario 1: Successfully Edit their profile.
@@ -79,6 +90,17 @@ Live Server: https://aravindramvjs.github.io/FRESHTIME/
     - Expected Result:
         - The user can delete their task.
 
+
+### Add Task
+- Scenario 1: Successfully add task or todos
+    - Steps:
+        1. User Logged In.
+        2. Navigate to the Task Page.
+        3. Type task name in the bar.
+        4. Enter or Click on the add button to add task.
+        5. If the user not completed over a day it goes to task suggestion
+    - Expected Result:
+        - The user can view their task in task suggestion sidebar.
 
 ### Start Timer
 - Scenario 1: Successfully start timer

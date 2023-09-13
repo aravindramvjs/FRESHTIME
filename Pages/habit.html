@@ -5,300 +5,310 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  -->
-    <title>Freshtime | Habit Tracker</title>
-    <!-- style sheet added -->
+    <title>FreshTime | Habit Tracker</title>
+
+    <!-- css file linked -->
     <link rel="stylesheet" href="../assets/css/habit.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/notify.css">
+    <link rel="stylesheet" href="../assets/css/emojionearea.css">
 
     <!-- adding favicon -->
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
 
-    <!-- Ubuntu Font Link   -->
+    <!-- ubuntu font link added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
+
     <!-- bootstrap for adding icon  -->
     <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
     </script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Sidepanel starts -->
-    <div class="sidepanel">
-        <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
-        <a href="dashboard.html"><i class='fas fa-home'></i><span class="title">Home</span></a>
-        <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
-        <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span< /a>
-        <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
-        <a href="notesall.html"><i class='far fa-paper-plane'></i><span class="title">Notes</span></a>
-        <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span class="title">Leaderboard</span></a>
-        <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
-        <div class="toggle"></div>
-    </div>
-
-    <main>
-        <!-- Habit section started -->
+    <div class="main">
         <div class="habit">
-            <!-- left habit section started -->
-            <div class="main-habit">
-                <div class="main-habit-header">
-                    <h1>Good Morning, Aravind!</h1>
-                    <p>6 Hrs 45 Min was your Last BedTime</p>
-                </div>
-                <!-- top section added -->
-                <div class="habit-overview">
-                    <div class="overview">
-                        <button class="week">Week</button>
-                        <button>Month</button>
-                        <button>Year</button>
-                        <button>All time</button>
-                    </div>
-                    <button class="addnew">+ Add New Habit</button>
-                </div>
-                <!-- top section ended-->
 
-                <!-- catogery section started -->
-                <h2><span class="prev">&#8249;</span> <span class="prev">&#8250;</span> Mon, Dec 12 - Sun, Dec 18</h2>
-                <progress id="file" value="65" max="100"> 65% </progress>
-                <div class="progress">
-                    <p> <i class="fa fa-arrow-up"></i><span class="para">Up 5% From Last Week</span></p>
-                    <p>68% Achieved</p>
-                </div>
-                <!-- catogery section ended -->
+            <div class="habitheader">
+                <input type="search" id="habitsearch" placeholder="Search" >
+                <i class="fa fa-search"></i>
 
+                <input type="date" id="habitdate">
+                
+                
 
-                <!-- weekly overview of habit started  -->
-                <hr>
-                <div class="weekdays">
-                    <p>Mon</p>
-                    <p>Tue</p>
-                    <p>Wed</p>
-                    <p>Thur</p>
-                    <p>Fri</p>
-                    <p>Sat</p>
-                    <p>Sun</p>
-                </div>
-                <!-- habit section starts -->
-
-                <div class="weeklyhabit">
-                    <ul id="habitlist">
-
-                    </ul>
-                </div>
-                <!-- <div class="habit-label">
-                        <p>Habit #1</p>
-                        <div class="grey-box"></div>
-                        <div class="whtie-box"></div>
-                        <div class="whtie-box"></div>
-                        <div class="whtie-box"></div>
-                        <div class="whtie-box"></div>
-                        <div class="whtie-box"></div>
-                        <div class="whtie-box"></div>
-                    </div> -->
-                <!-- habit section ends -->
-
-                <!-- habit section starts -->
-                <!-- <div class="habit-label">
-                        <p>Habit #2</p>
-                        <div class="voilet-box"></div>
-                        <div class="voilet-box"></div>
-                        <div class="voilet-box"></div>
-                        <div class="voilet-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div> -->
-                <!-- </div> -->
-                <!-- habit section ends -->
-
-                <!-- habit section starts -->
-                <!-- <div class="habit-label">
-                        <p>Habit #3</p>
-                        <div class="blue-box"></div>
-                        <div class="blue-box"></div>
-                        <div class="blue-box"></div>
-                        <div class="blue-box"></div>
-                        <div class="blue-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div>
-                    </div> -->
-                <!-- habit section ends -->
-
-                <!-- habit section starts -->
-                <!-- <div class="habit-label">
-                        <p>Habit #4</p>
-                        <div class="grey-box"></div>
-                        <div class="pink-box"></div>
-                        <div class="pink-box"></div>
-                        <div class="pink-box"></div>
-                        <div class="pink-box"></div>
-                        <div class="whtie-box"></div>
-                        <div class="whtie-box"></div>
-                    </div> -->
-                <!-- habit section ends -->
-
-                <!-- habit section starts -->
-                <!-- <div class="habit-label">
-                        <p>Habit #5</p>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="orange-box"></div>
-                        <div class="orange-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div> -->
-                <!-- </div> -->
-                <!-- habit section ends -->
-
-                <!-- habit section starts -->
-                <!-- <div class="habit-label">
-                        <p>Habit #6</p>
-                        <div class="grey-box"></div>
-                        <div class="green-box"></div>
-                        <div class="green-box"></div>
-                        <div class="green-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div>
-                        <div class="grey-box"></div>
-                    </div>  -->
-                <!-- habit section ends -->
+                <select name="Habit Filter" id="HabitFilter">
+                <option value="My Habit Order">Default Order</option>
+                <option value="Alphabetic Order">Alphabetic Order</option>
+                <option value="Remind Time">Remind Time</option>
+                </select>
             </div>
-            <!-- weekly habit overview ends -->
 
-            <!-- today habit overview started -->
-            <div class="today-habit">
-                <h3>Today's Habit</h3>
-                <p><span class="prev">&#8249;</span> <span class="prev">&#8250;</span>Mon, Dec 12</p>
-
-                <!-- hbait task starts -->
-                <div class="habit-task">
-
-                    <!-- each habit starts -->
-                    <div class="habit1 done">
-                        <div class="habit-streak">
-                            <p><i class="fa fa-podcast"></i>Podcast</p>
-                            <p class="streak">19 <img src="../assets/Images/fire.png" alt="fire" width="19px"> </p>
-                        </div>
-                        <button>Mark Complete</button>
-                    </div>
-                    <!-- each habit ends -->
-
-                    <!-- each habit starts -->
-                    <div class="habit2 done">
-                        <div class="habit-streak">
-                            <p><i class='fas fa-heartbeat'></i>Gym</p>
-                            <p class="streak">19<img src="../assets/Images/fire.png" alt="fire" width="19px"> </p>
-                        </div>
-                        <button>Mark Complete</button>
-                    </div>
-                    <!-- each habit ends -->
-
-                    <!-- each habit starts -->
-                    <div class="habit3 done">
-                        <div class="habit-streak">
-                            <p><img src="../assets/Images/meditate.png" alt="meditate" width="20px"> Meditate</p>
-                            <p class="streak">19<img src="../assets/Images/fire.png" alt="fire" width="19px"> </p>
-                        </div>
-                        <button>Mark Complete</button>
-                    </div>
-                    <!-- each habit ends -->
-
-                    <!-- each habit starts -->
-                    <div class="habit4 done">
-                        <div class="habit-streak">
-                            <p><i class='fas fa-book-reader'></i>Reading</p>
-                            <p class="streak">19<img src="../assets/Images/fire.png" alt="fire" width="19px"> </p>
-                        </div>
-                        <button>Mark Complete</button>
-                    </div>
-                    <!-- each habit ends -->
-
-                    <!-- each habit starts -->
-                    <div class="habit5 done">
-                        <div class="habit-streak">
-                            <p><i class="fa fa-sticky-note-o"></i>Journal</p>
-                            <p class="streak">19<img src="../assets/Images/fire.png" alt="fire" width="19px"> </p>
-                        </div>
-                        <button>Mark Complete</button>
-                    </div>
-                    <!-- each habit ends -->
-
-                    <!-- each habit starts -->
-                    <div class="habit6 done">
-                        <div class="habit-streak">
-                            <p><i class="fa fa-mobile-phone"></i>Social Media Detox</p>
-                            <p class="streak">19<img src="../assets/Images/fire.png" alt="fire" width="19px"
-                                    height="25px"> </p>
-                        </div>
-                        <button>Mark Complete</button>
-                    </div>
-                    <!-- each habit ends -->
-
-                </div>
-                <!-- habit task ends -->
+            <div class="greeting">
+                <p class="wish">
+                    Good Morning, <span id="username"></span>
+                    <span class="dot">.</span>
+                </p>
+                <input type="text" id="bedtime" placeholder="Add Your Bedtime">
             </div>
-            <!-- today habit overview ends -->
 
+            <!-- <div class="today">
+                <p>13 May Sunday</p>
+            </div> -->
+
+            <!-- <div class="daystimeline"></div> -->
+
+            <div class="habitlist"></div>
+
+            <div class="addhabit">
+                <div class="bubble"></div>
+                <div class="newhabit">
+                    <input type="text" id="addhabit" placeholder="+  Add Habit..." autofocus>
+                </div>
+            </div>
         </div>
-        <!-- Habit section started -->
-        <div class="addnewhabit">
-            <!-- <form> -->
 
-            <!-- habit header -->
-            <div class="habitname">
+        <!-- <div class="habitstarter">
+                <img src="../assets/Images/rocket.png" alt="habit gif" id="habitimg">
+                <h3>Start Today</h3>
+                <p>Start off today by making your habit very easy to achieve.
+                    By doing this you won't get burned out and give up.
+                </p>
+                <button id="startercancel">Cancel</button>
+                <button id="starternext">Next</button>
+        </div> -->
+
+        <div class="addhabitpopup">
+            <div class="habitheader">
                 <div class="design">
                     <p></p>
                 </div>
-                <div class="habitnamemain">
-                    <h1>Name of The Habit: <span id="close">&times;</span></h1>
-                    <input id="habitname" placeholder="Add Habit" required> <br>
-                    <input id="habitdescription" type="text" placeholder="Habit Description">
+                <div>
+                    <h3 class="habitheading">Add Habit </h3>
+                    <p class="habitquote">Tackle your goals in daily doses</p>
                 </div>
             </div>
 
-            <!-- habit type -->
-            <h2>Habit Type: </h2>
-            <input type="radio" id="todohabit">
-            <label id="todohabit" required>To-Do</label>
-            <input type="radio" id="notdohabit">
-            <label id="notdohabit" required>Not-To-Do</label>
+            <form id="habitpopupform">
+                <div class="habitnamepopup">
+                    <label for="habitname" id="habitnamelabel">Habit: </label>
+                    <input type="text" id="habitname" placeholder="Add Habit" required>
+                    <br>
+                    <div class="iconcolor">
+                        <div class="icon">
+                            <input type="text" id="emojitextarea" class="habiticon">
+                            <p>Emoji</p>
+                        </div>
 
-            <!-- daily or not  -->
-            <div class="weeklyfreq">
-                <h2>Weekly Frequency</h2>
-                <button>Mon</button>
-                <button>Tue</button>
-                <button>Wed</button>
-                <button>Thu</button>
-                <button>Fri</button>
-                <button>Sat</button>
-                <button>Sun</button>
-                <button>Week Days </button>
-                <button>Every Day</button>
+                        <div class="color">
+                            <p class="habitcolor"></p>
+                            <p class="habitcolorspan">Color</p>
+                        </div>
+                    </div>
+                    <div class="habittype">
+                        <label for="habittype" id="habittypelabel" name="habittype" required>Habit Type: </label>
+                        <input type="radio" name="habittype" id="todo">
+                        <label for="habittype" id="habittypelabel" name="habittype">To Do </label>
+                        <input type="radio" name="habittype" id="nottodo">
+                        <label for="habittype" id="habittypelabel" name="habittype">Not To Do</label>
+                    </div>
+                    <div class="weeklyfreq" required>
+                        <p>Weekly Frequency: </p>
+                        <button>Mon</button>
+                        <button>Tue</button>
+                        <button>Wed</button>
+                        <button>Thu</button>
+                        <button>Fri</button>
+                        <button>Sat</button>
+                        <button>Sun</button>
+                        <button>Week Days </button>
+                        <button>Every Day</button>
+                    </div>
+                    <label for="reminder" id="reminderlabel">Reminder: </label>
+                    <input type="time" id="reminder">
+                    <div class="savediv">
+                        <button id="cancel">Cancel</button>
+                        <button id="savehabit">Save Habit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="habitstreak">
+            <div class="habitstreakheader">
+                <p class="habitname">Habit Name</p>
+                <p class="edithabit">
+                    <i class="fa fa-edit"></i>
+                </p>
+                <p id="deletehabit">
+                    <i class="fa fa-trash-o"></i>
+                <p>
+            </div>
+            <hr>
+
+            <div class="currentstreak">
+                <img src="../assets/Images/STREAK FIRE.svg" alt="Streak img" id="streakimg">
+                <div class="currstreakdays">
+                    <h3>Current Streak</h3>
+                    <p id="currentstreak"></p>
+                </div>
+                <p id="streakfrom"></p>
             </div>
 
-            <!-- habit notification -->
-            <h2>Daily Notification</h2>
-            <label id="timelabel">Select a time:</label>
-            <input type="time" id="appt"> <br>
+            <div class="streak">
+                <div class="streakcardrow1">
+                    <div class="streakcard" id="donecard">
+                        <p class="statushabit">&#10004; COMPLETE</p>
+                        <p class="totaldays"></p>
+                        <p class="streaktill">
+                            <i class="fa fa-arrow-up"></i>7 Days
+                        </p>
+                    </div>
+                    <!-- <div class="streakcard" id="failcard">
+                        <p class="statushabit">&#10004; SKIP</p>
+                        <p class="totaldays">10 Days</p>
+                        <p class="streaktill">
+                            <i class="fa fa-arrow-up"></i>7 Days
+                        </p>
+                    </div> -->
+                </div>
+                <div class="streakcardrow2">
+                    <div class="streakcard" id="skipcard">
+                        <p class="statushabit">&#10004; FAIL</p>
+                        <p class="faildays"></p>
+                        <p class="streaktill">
+                            <i class="fa fa-arrow-up"></i>7 Days
+                        </p>
+                    </div>
+                    <!-- <div class="streakcard" id="totalcard">
+                        <p class="statushabit">&#10004; TOTAL</p>
+                        <p class="totaldays">10 Days</p>
+                        <p class="streaktill">
+                            <i class="fa fa-arrow-up"></i>7 Days
+                        </p>
+                    </div> -->
+                </div>
+            </div>
 
+            <div class="calender">
+                <div class="wrapper">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="higheststreak">
+                <p class="startingdate">Apr 01</p>
+                <p class="totlastreak">30</p>
+                <p class="endingdate">Apr 30</p>
 
-            <button id="addhabit" onclick="addhabit()">Add Habit</button>
-            <!-- </form> -->
+            </div> -->
+            <div class="progresshabit">
 
+            </div>
         </div>
-    </main>
 
-    <!-- circle starts -->
-    <div class="circle1"></div>
-    <div class="circle2"></div>
-    <div class="circle3"></div>
-    <div class="circle4"></div>
-    <div class="circle5"></div>
-    <!-- circle ends -->
+        <div class="notes">
+            <section>
+                <div class="habitheader">
+                    <div class="design">
+                        <p></p>
+                    </div>
+                    <div>
+                        <h3 class="habitheading">✨ Reflections </h3>
+                        <p class="habitquote">Take a moment and Reflect on your habit</p>
+                    </div>
+                </div>
+                <div class="title">
+                    <input type="text" id="title" placeholder="Title">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="first box">
+                            <input id="font-size" type="number" value="18" min="1" max="100" onchange="fontsize(this)">
+                        </div>
+                        <div class="second box">
+                            <button class="btn" data-type="heading">H</button>
+                            <button class="btn" data-type="bold">B</button>
+                            <button class="btn" data-type="italic">
+                                <i>i</i>
+                            </button>
+                        </div>
+                        <div class="third box">
+                            <button type="button" onclick="leftalign(this)">
+                                <i class="fa-solid fa-align-left"></i>
+                            </button>
+                            <button type="button" onclick="centeralign(this)">
+                                <i class="fa-solid fa-align-center"></i>
+                            </button>
+                            <button type="button" onclick="rightalign(this)">
+                                <i class="fa-solid fa-align-right"></i>
+                            </button>
+                        </div>
+                        <div class="fourth box">
+                            <button class="btn" data-type="underline">
+                                <u>U</u>
+                            </button>
+                            <button class="btn" data-type="ordered-list">
+                                <i class="fa-solid fa-list"></i>
+                            </button>
+                            <button class="btn" data-type="unordered-list">
+                                <i class="fa-solid fa-list-ol"></i>
+                            </button>
+                            <input type="color" onchange="fontcolor(this)">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="notes-editor" contenteditable="true"></div>
+                    </div>
+                </div>
+
+                <div class="savediv">
+                    <button id="cancelnotes">Cancel</button>
+                    <button id="savenotes">Save Notes</button>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+<script>
+    $('#emojitextarea').emojioneArea({
+        ppxickerPosition: 'left',
+        searchPosition: "bottom",
+    })
+</script>
 <script src="../assets/JS/habit.js"></script>
+<script src="../assets/JS/template.js"></script>
 <script src="../assets/JS/notify.js"></script>
 
 </html>

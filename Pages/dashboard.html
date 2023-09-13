@@ -25,6 +25,8 @@
         crossorigin="anonymous"
         integrity="">
         </script>
+
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <!-- the main dashborad starts -->
@@ -43,7 +45,6 @@
                 <p>Monday, 19 December 2022</p>
             </div>
             <!-- The Top content of the dashboard ended -->
-    
     
             <!-- The Second row starts -->
             <div class="day-overview">
@@ -84,14 +85,14 @@
     
                 <div>
                     <div class="overview">
-                        <i class='far fa-calendar-check' ></i>
+                        <i class="far fa-calendar-check"></i>
                         <div >
                             <h2>Today's Productivity</h2>
                             <p class="percent">37%</p>
                         </div>
                     </div>
                     <div class="overview">
-                        <i class='far fa-calendar-alt'></i>
+                        <i class="far fa-calendar-alt"></i>
                         <div>
                             <h2>Weekly Productivity</h2>
                             <p class="percent">56%</p>
@@ -117,13 +118,17 @@
         <!-- right side dashboard added-->
         <div class="side-dash">
             <div class="profile">
-                <i class='far fa-comment'></i>
-                <a href="profile.html"><img src="../assets/Images/profile.jpg" alt="avator" width="70px"></a>
+                <i class="far fa-comment"></i>
+                <a href="profile.html">
+<img src="../assets/Images/profile.jpg" alt="avator" width="70px">
+</a>
                 <i class="fa fa-bell"></i>
             </div>
     
             <div class="calendar">
-                <p>Welcome Aravind!</p>
+                <p>
+Welcome <span id="username"></span>!
+</p>
                 <img src="../assets/Images/calendar.png "alt="calendar" width="280px">
             </div>
             <div class="enjoy">

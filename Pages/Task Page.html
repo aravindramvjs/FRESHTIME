@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/notify.css">
 
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- adding favicon -->
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
 
@@ -26,17 +28,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
     </style>
 
-
     <!-- bootstrap for adding icon  -->
     <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
     </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-    </style>
 
 </head>
 
@@ -44,106 +38,72 @@
 
     <!-- main container of task starts  -->
     <div class="main">
-
-        <!-- sidepanel starts -->
-        <div class="sidepanel">
-            <a href="../index.html"><img src="../assets/Images/FRESHTIME LOGO NEW.png" width="250px" alt="logo"></a>
-            <a href="dashboard.html"><i class='fas fa-home'></i><span class="title">Home</span></a>
-            <a href="Task Page.html"><i class="fas fa-tasks"></i><span class="title">Task</span></a>
-            <a href="timer.html"><i class='far fa-hourglass'></i><span class="title">Timer</span></a>
-            <a href="habit.html"><i class='fas fa-spa'></i><span class="title">Habit</span></a>
-            <a href="notesall.html"><i class='far fa-paper-plane'></i><span class="title">Notes</span></a>
-            <a href="leaderboard.html"><i class="fa-solid fa-shield-halved"></i></i><span
-                    class="title">Leaderboard</span></a>
-            <a href="profile.html"><i class='fas fa-user-ninja'></i><span class="title">Profile</span></a>
-            <div class="toggle"></div>
-        </div>
-        <!-- sidepanel ends -->
-
-        <!-- task section starts -->
         <div class="task-page">
+            <!-- Add button to authorize and create an event -->
+            <pre id="content" style="white-space: pre-wrap;"></pre>
             <div class="top">
-                <p class="top-1">Good Morning, Aravind <span class="dot">.</span></p>
-                <p class="top-2">If not now. When?</p>
+                <p class="top-1">
+                    Good Morning, <span id="username"></span>
+                    <span class="dot">.</span>
+                </p>
+                <p class="top-2">What will you accomplish today?<p>
                 <div class="date-task">
-                    <p><span class="day">Mon</span> <br> <span class="date">19</span> <br> <span class="day">Dec</span>
+                    <p>
+                        <span id="digitaltime"></span>
+                        <br>
+                        <span class="day"></span>
+                        <br>
+                        <span class="date"></span>
+                        <br>
+                        <span class="month"></span>
                     </p>
-                    <input for="taskinput" type="text" name="addtask"id="add-task" placeholder="+  Add Task..." autofocus>
-                    <button id="addbtn" onclick="addtask()">ADD</button>
+                    <input for="taskinput" type="text" name="addtask" id="add-task" placeholder="+  Add Task..."
+                        autofocus>
+                    <button id="addbtn">ADD</button>
                 </div>
             </div>
 
 
-            <!-- <div class="main-cont">
+            <div class="taskcategory">
+                <h3 id="openTask">Open Task</h3>
+                <!-- <h3 id="doneTask">Done Task</h3> -->
+            </div>
 
-                            <div class="headers">
-                                <p>Task</p>
-                                <p>Due Date</p>
-                                <p>Priority</p>
-                                <p>Progress</p>
-                            </div> -->
+            <hr id="cathr">
 
+            <!-- Table Name -->
+            <div class="tasktablehead">
+                <p>Task Name</p>
+                <p>Priority</p>
+                <p>Time Left</p>
+                <p>Due</p>
+                <p>Start</p>
+                <p>Create Event</p>
+            </div>
+            <!-- Task List -->
             <div class="addtasks">
                 <ul id="tasklist"></ul>
                 <div id="task_notes_active"></div>
             </div>
 
-
-            <!-- each task added -->
-            <!-- <div class="task-list">
-                
-                                <p>Project <br>Layout</p>
-                                <p>19 Dec 2022, <br>5:00 Pm</p>
-                                <p>High <br>Priority</p>
-                                <p class="inprogress">Inprogress</p>
-                                <button class="start">Start</button>
-                            </div> -->
-            <!-- each task ends -->
-
-            <!-- each task added -->
-            <!-- <div class="task-list">
-                
-                                <p>Project <br>Layout</p>
-                                <p>19 Dec 2022, <br>5:00 Pm</p>
-                                <p>High <br>Priority</p>
-                                <p class="inprogress">Inprogress</p>
-                                <button class="start">Start</button>
-                            </div> -->
-            <!-- each task ends -->
-
-            <!-- each task added -->
-            <!-- <div class="task-list">
-                
-                                <p>Project <br>Layout</p>
-                                <p>19 Dec 2022, <br>5:00 Pm</p>
-                                <p>High <br>Priority</p>
-                                <p class="inprogress">Inprogress</p>
-                                <button class="start">Start</button>
-                            </div> -->
-            <!-- each task ends -->
-            <!-- </div>                       -->
         </div>
-        <!-- task section ends -->
 
-        <!-- task description page starts  -->
-        <input type="checkbox" id="checkbox1"><label for="checkbox">.</label>
-        <input type="checkbox" id="checkbox2"><label for="checkbox">.</label>
-        <input type="checkbox" id="checkbox3"><label for="checkbox">.</label>
+        <!-- Task Details -->
+        <div class="detailsCard">
+            <label for="timeneeded"><i class="fa fa-clock-o"></i> I Need:</label>
+            <input type="text" id="timeneeded" placeholder="60 Min">
+            <br>
+            <label for="date"><i class='far fa-calendar-check'></i> Date: </label>
+            <input type="date" id="duedate">
+            <br>
+            <label for="time"><i class='fas fa-hourglass-start'></i> Between: </label>
+            <input type="time" id="startingtime">
+            <br>
+            <label for="time"><i class='fas fa-hourglass-end'></i> To: </label>
+            <input type="time" id="endingtime">
+            <br>
 
-        <div class="task-notes">
-
-
-            <h2>Task Name #01 <span id="close">&times;</span></h2>
-
-            <button><i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me</button>
-            <Button><i class="fa fa-hashtag" style="color:violet"></i>Tags</Button>
-            <button><i class="fa fa-user"></i>Personal</button>
-            <button><i class="fa fa-suitcase" style="color:skyblue"></i>Work</button> <br>
-
-            <label for="date">Due Date: </label>
-            <input type="date" id="date"> <br>
-
-            <label for="Priority">Priority Of Your Task: </label>
+            <label for="Priority"><i class="fa fa-warning"></i> This Task is: </label>
             <select name="Priority" id="Priority">
                 <option value="Less Priority">Less Priority</option>
                 <option value="Mid Priority">Mid Priority</option>
@@ -151,28 +111,214 @@
                 <option value="Waste Of Time">Waste Of Time</option>
             </select>
 
-
-            <h3>Notes:</h3>
-
-            <input type="text" placeholder="Insert Your Notes Here" id="notes">
-            <h3>Sub Task:</h3>
-            <input type="radio" id="radio" aria-label="sub-task"><span id="sub-task">Add New Sutask</span></input>
-            <label for="radio">.</label>
-            <h3>Attachment:</h3>
-            <p class="files">Click here to add / drop your files here</p>
+            <button id="cancel">Cancel</button>
+            <button id="savetask">Save</button>
         </div>
-        <!-- task description page ends  -->
+
+
+
+        <div class="taskdetailsdiv">
+            <!-- <p id="breadcrums">FreshTime/Tasks <span>Close</span></p> -->
+            <input type="text" id="tasknamedetails" placeholder="Task Name">
+
+            <button>
+                <i class="fa fa-bell" style="color:#f7bb07"></i>Remind Me
+            </button>
+            <Button>
+                <i class="fa fa-hashtag" style="color:violet"></i>Tags
+            </Button>
+            <button>
+                <i class="fa fa-user"></i>Personal
+            </button> <br>
+            <label for="timeneeded"><i class="fa fa-clock-o"></i> Time Need:</label>
+            <input type="text" id="timeneededtd" placeholder="60 Min">
+            <br>
+            <label for="date"><i class='far fa-calendar-check'></i> Due Date: </label>
+            <input type="date" id="duedatetd">
+            <br>
+            <label for="time"><i class='fas fa-hourglass-start'></i> Starting Time: </label>
+            <input type="time" id="startingtimetd">
+            <br>
+            <label for="time"><i class='fas fa-hourglass-end'></i> Ending Time: </label>
+            <input type="time" id="endingtimetd">
+            <br>
+
+            <label for="Priority"><i class="fa fa-warning"></i> Priority: </label>
+            <select name="Priority" id="Prioritytd">
+                <option value="Less Priority">Less Priority</option>
+                <option value="Mid Priority">Mid Priority</option>
+                <option value="High Priority">High Priority</option>
+                <option value="Waste Of Time">Waste Of Time</option>
+            </select>
+
+            <h3 id="notesh3">Notes:</h3>
+            <textarea placeholder="Insert Your Notes Here" id="notestd" rows="3" cols="45"></textarea>
+
+            <div class="timer">
+                <h3>Timer: </h3>
+                <div class="clock">
+                    <div class="mins">0</div>
+                    <div>:</div>
+                    <div class="secs">00</div>
+                    <audio src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+                    <svg class="progress-ring" height="120" width="120">
+                        <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="50" cx="60"
+                            cy="60" />
+                    </svg>
+                </div>
+
+                <div class="btn-group">
+                    <!-- <button class="start"><i class="fa-solid fa-play"></i>Start</button> -->
+                    <button class="pause"><i class="fa fa-pause"></i> Pause</button>
+                    <button class="reset"><i class="fa fa-undo"></i> Reset</button>
+                </div>
+            </div>
+
+
+            <button id="canceldetailsdiv">Cancel</button>
+            <button id="savedetailsdiv">Save</button>
+        </div>
+
     </div>
-        <!-- circle starts -->
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-        <div class="circle4"></div>
-        <div class="circle5"></div>
-    
-    <!-- circle ends -->
 </body>
 <script src="../assets/JS/task.js"> </script>
+<script type="text/javascript">
+    // let indexval;
+    async function createEvent() {
+
+const duedateevent = existingtask[index]["duedate"]
+const startevent = existingtask[index]["startingtime"]
+const endevent = existingtask[index]['endingtime']
+
+const event = {
+    'summary': existingtask[index]["taskname"],
+    'description': existingtask[index]["taskname"],
+    'start': {
+        'dateTime': duedateevent + 'T' + startevent + ':00+05:30',
+        'timeZone': 'Asia/Kolkata'
+    },
+    'end': {
+        'dateTime': duedateevent + 'T' + endevent + ':00+05:30',
+        'timeZone': 'Asia/Kolkata'
+    },
+    'recurrence': [
+        'RRULE:FREQ=DAILY;COUNT=1'
+    ],
+    'reminders': {
+        'useDefault': false,
+        'overrides': [
+            { 'method': 'popup', 'minutes': 10 }
+        ]
+    }
+};
+
+try {
+    const response = await gapi.client.calendar.events.insert({
+        'calendarId': 'primary',
+        'resource': event
+    });
+    appendPre('Event created: ' + response.result.htmlLink);
+} catch (error) {
+    appendPre('Error creating event: ' + error.message);
+    console.log('Error:', error);
+}
+}
+    
+
+
+    // TODO: Set to client ID and API key from the Developer Console
+    const CLIENT_ID = '879687241176-kh9udu4dc6at9jqlmfohlrs0ovi01pms.apps.googleusercontent.com';
+    const API_KEY = 'AIzaSyB-KNY4pNja2u2dh317PINNA2i0ZhJnJLY';
+
+    // Discovery doc URL for APIs used by the quickstart
+    const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
+
+    // Authorization scopes required by the API; multiple scopes can be
+    // included, separated by spaces.
+    const SCOPES = 'https://www.googleapis.com/auth/calendar';
+
+    let tokenClient;
+    let gapiInited = false;
+    let gisInited = false;
+
+    /**
+     * Callback after api.js is loaded.
+     */
+    function gapiLoaded() {
+        gapi.load('client', initializeGapiClient);
+    }
+
+    /**
+     * Callback after the API client is loaded. Loads the
+     * discovery doc to initialize the API.
+     */
+    async function initializeGapiClient() {
+        await gapi.client.init({
+            apiKey: API_KEY,
+            discoveryDocs: [DISCOVERY_DOC],
+        });
+        gapiInited = true;
+        maybeEnableButtons();
+    }
+
+    /**
+     * Callback after Google Identity Services are loaded.
+     */
+    function gisLoaded() {
+        tokenClient = google.accounts.oauth2.initTokenClient({
+            client_id: CLIENT_ID,
+            scope: SCOPES,
+            callback: '', // defined later
+        });
+        gisInited = true;
+        maybeEnableButtons();
+    }
+
+    /**
+     * Enables user interaction after all libraries are loaded.
+     */
+    function maybeEnableButtons() {
+        if (gapiInited && gisInited) {
+            document.getElementById('authorize_button').style.visibility = 'visible';
+        }
+    }
+
+    /**
+     *  Sign in the user upon button click and create an event.
+     */
+    function handleAuthClick() {
+        tokenClient.callback = async (resp) => {
+            if (resp.error !== undefined) {
+                throw (resp);
+            }
+            await createEvent();
+        };
+
+        if (gapi.client.getToken() === null) {
+            // Prompt the user to select a Google Account and ask for consent to share their data
+            // when establishing a new session.
+            tokenClient.requestAccessToken({ prompt: 'consent' });
+        } else {
+            // Skip display of account chooser and consent dialog for an existing session.
+            tokenClient.requestAccessToken({ prompt: '' });
+        }
+    }
+
+    /**
+     * Create a new event in the user's Google Calendar.
+     */
+
+
+    function appendPre(message) {
+        const pre = document.getElementById('content');
+        const textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+    }
+</script>
+<script src="https://apis.google.com/js/api.js" onload="gapiLoaded()" async defer></script>
+<script src="https://accounts.google.com/gsi/client" onload="gisLoaded()" async defer></script>
+<script src="../assets/JS/tasktimer.js"></script>
 <script src="../assets/JS/template.js"></script>
 <script src="../assets/JS/notify.js"></script>
+
 </html>

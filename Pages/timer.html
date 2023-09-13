@@ -1,111 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- page title added -->
-    <title>FRESHTIME | Timer</title>
+  <!-- page title added -->
+  <title>FRESHTIME | Timer</title>
 
-    <!-- style sheet added -->
-    <link rel="stylesheet" href="../assets/css/timer.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
+  <!-- style sheet added -->
+  <link rel="stylesheet" href="../assets/css/timer.css">
+  <link rel="stylesheet" href="../assets/css/common.css">
 
-        <!-- adding favicon -->
-        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+  <!-- adding favicon -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
 
-    <!--ubuntu font link added  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+  <!--ubuntu font link added  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  </style>
 
-    <!-- adding icon  -->
-    <script
-    src="https://kit.fontawesome.com/ee40c53027.js"
-    crossorigin="anonymous"
-    integrity=""></script>
+  <!-- adding icon  -->
+  <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity=""></script>
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
-<div class="main">
-  <!-- main container of time starts -->
-        <div class="timer">
-            <div class="timer-top">
-                <a href="#"><button><img src="../assets/Images/tomato-icon.svg" alt="tomoto" width="30px"> Pomodoro</button></a>
-                <a href="animedoro.html"><button><img src="../assets/Images/icons8-naruto.svg" alt="naruto" width="30px"> Animedoro</button></a>
-            </div>
-            <br>
-            <div class="timer-mid">
-                <button id="timer" ><i class="fa fa-clock-o"></i>  Timer</button>
-                <button id="break"><i class="fa fa-coffee"></i> Short Break</button>
-                <button><img src="../assets/Images/long break.gif" alt="long break" width="24px"> Long Break</button>
-            </div>
-            <!-- <p>25:00</p> -->
-            <div class="time">
-              <p id="minutes">25</p>
-              <p>:</p>
-              <p id="seconds">00</p>
-            </div>
-            <div class="timer-end">
-                <button id="start" onclick="start()" ><i class="fa-solid fa-play"></i> Start</button>
-                <button><i class="fa-solid fa-pause"></i> Pause</button>
-                <a href="timer.html"><i class="fa fa-repeat"></i> </a>
-            </div>
-            <!-- main container of time starts -->
+  <div class="main">
+    <!-- main container of time starts -->
+    <div class="timer">
+      
+      <div class="timerheader">
+        <p>Pomodoro</p>
+        <p>Short Break</p>
+      </div>
 
-            <!-- spotify script added -->
-            <div class="script">
-              <iframe 
-              title="Navigation menu"
-                style="border-radius:12px" 
-                src="https://open.spotify.com/embed/playlist/0JpkcEtZWGrfuDYOzGI5dr?utm_source=generator"
-                width="20%" 
-                height="80" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-            </iframe>
-            <!-- spotify script ends -->
-            
-          <!-- Full/close screen Script -->
-                <button onclick="openFullscreen();" id="fullscreen" aria-label="fullscreen"> <img src="../assets/Images/fullscreen.png" alt=""></button>
-                <button onclick="closeFullscreen();" id="fullscreen" aria-label="closescreen"><img src="../assets/Images/exit fullscreen.png" alt="" width="50px"></button>
-                            
-                <script>
-                var elem = document.querySelector('.timer');
-                function openFullscreen() {
-                  if (elem.requestFullscreen) {
-                    elem.requestFullscreen();
-                  } else if (elem.webkitRequestFullscreen) { /* Safari */
-                    elem.webkitRequestFullscreen();
-                  } else if (elem.msRequestFullscreen) { /* IE11 */
-                    elem.msRequestFullscreen();
-                  }
-                }
-                            
-                function closeFullscreen() {
-                  if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                  } else if (document.webkitExitFullscreen) { /* Safari */
-                    document.webkitExitFullscreen();
-                  } else if (document.msExitFullscreen) { /* IE11 */
-                    document.msExitFullscreen();
-                  }
-                }
-                </script>
-                
-            </div>
-            <!-- full/close screen script ends -->
+      <div class="clock">
+        <div class="mins">0</div>
+        <div>:</div>
+        <div class="secs">00</div>
+        <audio src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+        <svg class="progress-ring">
+          <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="50" cx="60" cy="60" />
+        </svg>
+      </div>
 
+      <div class="btn-group">
+        <button class="start"><i class="fa fa-play"></i>  Start</button>
+        <button class="pause"><i class="fa fa-pause"></i>  Pause</button>
+        <button class="reset"><i class="fa fa-undo"></i>  Reset</button>
+        <button class="setting"><i class="fa fa-gear"></i> Setting</button>
+      </div>
+
+    </div>
+
+    <div class="settingForm">
+      <!-- <h3>Setting</h3> -->
+      <p><i class="fa fa-close"></i></p>
+      <form action=".">
+        <label for="focusTime">Focus Time</label>
+        <input type="number" value="1" id="focusTime" />
+        <label for="breakTime">Break Time</label>
+        <input type="number" value="1" id="breakTime" />
+        <button type="submit" id="savesetting">Save settings</button>
+      </form>
+    </div>
+
+    <!-- spotify script added -->
+    <div class="spotify">
+      <iframe title="Navigation menu" style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/0JpkcEtZWGrfuDYOzGI5dr?utm_source=generator" width="400px"
+        height="80" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+      </iframe>
+    </div>
+    <!-- spotify script ends -->
 
   </div>
-          <!-- main container of time ends -->
-  </div>
-<script src="../assets/JS/timer.js"></script>
-<script src="../assets/JS/template.js"></script>
+  <script src="../assets/JS/timer.js"></script>
+  <script src="../assets/JS/template.js"></script>
 </body>
+
 </html>

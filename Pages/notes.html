@@ -12,6 +12,8 @@
     <!-- style sheet added -->
     <link rel="stylesheet" href="../assets/css/notes.css">
     <link rel="stylesheet" href="../assets/css/common.css">
+    <style>.circle2{display: none}</style>
+    <link rel="stylesheet" href="../assets/css/notify.css">
 
     <!-- adding favicon -->
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
@@ -28,13 +30,22 @@
     <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
     </script>
 
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
-    <div class="main"> <!--The Total Page starts-->
+    <div class="main">
+ <!--The Total Page starts-->
          <!-- journal starts -->
         <div class="journal">
-            <h1>Good Morning, Aravind!</h1>
+            <h1>
+Good Morning, <span id="username"></span>!
+</h1>
+            <div class="saveDelete">
+                <button class="savenotes" id="savenotes" onclick="editnotes()">Save</button>
+                <button onclick="deletenotes() ">Delete</button>
+            </div>
             <p class="welcome"></p>
             <!-- <form id="usernotesform">
                 <h1 id="headline">Heading</h1> <br>
@@ -45,12 +56,10 @@
                 <button class="savenotes" id="savenotes">save</button>
             </form> -->
         </div>
+
 </body>
-<!-- pin script added -->
-<script>
- let currentDate = new Date().toJSON().slice(0, 10)
-document.querySelector(".welcome").innerHTML = `<h3>Today | ${currentDate}</h3>`;
-</script>
 <script src="../assets/JS/selectednote.js"></script>
+<!-- <script src="../assets/JS/createnotes.js"></script> -->
+<script src="../assets/JS/notify.js"></script>
 <script src="../assets/JS/template.js"></script>
 </html>

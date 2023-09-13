@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +12,48 @@
     <link rel="stylesheet" href="../assets/css/notes.css">
     <link rel="stylesheet" href="../assets/css/common.css">
 
-        <!-- adding favicon -->
-        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
+    <!-- adding favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../assets/Images/favicon.png">
 
-       <!-- Nunito Font Link -->
-       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-       <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
-    
-        <!-- bootstrap for adding icon  -->
-      <script
-      src="https://kit.fontawesome.com/ee40c53027.js"
-      crossorigin="anonymous"
-      integrity="">
-      </script>
+    <!-- Nunito Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    </style>
 
-      <!-- notify css -->
+    <!-- bootstrap for adding icon  -->
+    <script src="https://kit.fontawesome.com/ee40c53027.js" crossorigin="anonymous" integrity="">
+    </script>
 
-      <link href="../assets/"
+    <!-- notify css -->
+
+    <link href="../assets/css/notify.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
 <body>
-    <div class="main"> <!--The Total Page starts-->
+    <div class="main">
+        <!--The Total Page starts-->
         <!-- journal page starts -->
         <div class="journal">
-            <a href="/"><button>All Notes</button></a>
-            <a href="/"><button>Folder</button></a>
+            <div class="greeting">
+                <p class="wish">
+                    Good Morning, <span id="username"></span>
+                    <span class="dot">.</span>
+                </p>
+                <p type="text" id="bedtime">When heart speaks take good notes.</p>
+            </div>
 
             <h1>Journal</h1>
             <h3 id="date"></h3>
 
             <!-- each section of journal starts -->
             <div class="allnotes">
-                    <!-- <a href="notes.html" id="noteslink">
+                <!-- <a href="notes.html" id="noteslink">
                         <div class="main_notes">
                             <div class="date">25 Mar</div>
                             <div class="heading">What is Database?</div>
@@ -58,23 +68,30 @@
                         </div> 
                     </a> -->
 
-                     <!-- <div class="main_notes">
-                        <div class="date">
-                            <p>25 Mar</p>
-                            <p class="dot">...</p>
+                <!-- <div class="eachnotes">
+                         <div class="main_notes">
+                            <div class="date">
+                                <p>25 Mar</p>
+                                <p class="dot">...</p>
+                            </div>
+                            <div class="heading">What is Database?</div>
+                            <div class="tags">
+                                <button>database</button>
+                                <button>academy</button>
+                            </div>
+                            <div class="notes">
+                                <p>A database is an organized collection of structured information, or data,
+                                    typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).</p>
+                            </div>
+                        </div> 
+                        <div class="viewnotes">
+                            <p class="notes1">View Notes<i class='far fa-share-square'></i></p> <hr>
+                            <p>Edit Notes <i class='far fa-edit'></i></p> <hr>
+                            <p>Delete Notes<i class="fa fa-trash"></i></p>
                         </div>
-                        <div class="heading">What is Database?</div>
-                        <div class="tags">
-                            <button>database</button>
-                            <button>academy</button>
-                        </div>
-                        <div class="notes">
-                            <p>A database is an organized collection of structured information, or data,
-                                typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).</p>
-                        </div>
-                    </div>  -->
+                     </div> -->
 
-                   <!--  <div class="main_notes">
+                <!--  <div class="main_notes">
                         <div class="date">25 Mar</div>
                         <div class="heading">What is Database?</div>
                         <div class="tags">
@@ -89,26 +106,33 @@
             </div>
             <!-- each section of journal ends -->
 
-            <div class="addnotes">
-                <p><a href="notescreate.html"><i class="fa fa-plus"></i>Add New Notes</a></p>
-                
+                <div class="addnotes" onclick="">
+                    <p>
+                        <a href="notescreate.html">
+                            <i class="fa fa-plus"></i>Add New Notes
+                        </a>
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
-        <div class="viewnotes">
-            <p class="notes1">View Notes<i class='far fa-share-square'></i></p> <hr>
-            <p>Edit Notes <i class='far fa-edit'></i></p> <hr>
-            <p>Delete Notes<i class="fa fa-trash"></i></p>
-        </div>
-    </div>
 
+        <script>
+            const currentDate = new Date().toJSON().slice(0, 10)
+            document.querySelector("#date").innerHTML = `<h3>Today | ${currentDate}</h3>`;
 
-
-<script>
-    let currentDate = new Date().toJSON().slice(0, 10)
-    document.querySelector("#date").innerHTML = `<h3>Today | ${currentDate}</h3>`;
-</script>
+    // let dot = document.querySelector(".dot");
+    // let viewnotes = document.querySelector(".viewnotes")
+    // dot.onclick = function () {
+    //     viewnotes.style.display = "block"
+    // }
+        </script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.1/purify.min.js"></script>
 <script src="../assets/JS/notesall.js"></script>
 <script src="../assets/JS/template.js"></script>
+<script src="../assets/JS/notify.js"></script>
+
 </html>
